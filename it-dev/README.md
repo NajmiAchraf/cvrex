@@ -8,7 +8,7 @@
   </a>
   <a href="https://gitlicense.com/license/NajmiAchraf/cvrex">
     <img src="https://gitlicense.com/badge/NajmiAchraf/cvrex" alt="GitLicense" />
-  </a>	
+  </a>  
 </div>
 
 
@@ -21,45 +21,18 @@ Please replace them with your own photos and logos if you use this template!
 <table width="100%" margin-left="auto" margin-right="auto">
   <tr>
     <th>IT Dev FR</th>
-    <th>Physics IT Electronic darkpython FR</th>
-    <th>Physics IT Hydrogeology darkxp FR</th>
+    <th>IT Dev EN</th>
   </tr>
   <tr>
-    <td width="33%">
-      <img src="previews/it-dev_fr.png" 
+    <td width="50%">
+      <img src="../previews/it-dev_fr.png" 
         alt="IT Dev CV example preview" />
     </td>
-    <td width="33%">
-      <img src="previews/it-electronic-darkpython_fr.png" 
-        alt="IT Electronic CV example preview" />
-    </td>
-    <td width="33%">
-      <img src="previews/it-hydrogeology-darkxp_fr.png" 
-        alt="IT Hydrogeology CV example preview" />
+    <td width="50%">
+      <img src="../previews/it-dev_en.png" 
+        alt="IT Dev CV example preview" />
     </td>
   </tr>
-</table>
-</div>
-
-<table>
-    <tr>
-       	<th>IT Dev EN</th>
-        <th>Physics IT Electronic darkpython EN</th>
-       	<th>Physics IT Hydrogeology darkxp EN</th>
-    </tr>
-    	<tr>	
-    		<td width="33%">
-    			<img src="previews/it-dev_en.png"
-    				alt="IT Dev CV example preview" />
-    		</td>
-        <td width="33%">
-          <img src="previews/it-electronic-darkpython_en.png" 
-            alt="IT Electronic CV example preview" />
-        </td>
-    		<td width="33%">
-    			<h4>Coming soon...</h4>
-            </td>    	
-    	</tr>
 </table>
 </div>
 
@@ -90,5 +63,4 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
 IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
 

@@ -1,0 +1,287 @@
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+%	MIT License
+%	
+%	Copyright (c) 2021 ACHRAF NAJMI
+%	
+%	Permission is hereby granted, free of charge, to any person obtaining a copy
+%	of this software and associated documentation files (the "Software"), to deal
+%	in the Software without restriction, including without limitation the rights
+%	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%	copies of the Software, and to permit persons to whom the Software is
+%	furnished to do so, subject to the following conditions:
+%	
+%	The above copyright notice and this permission notice shall be included in all
+%	copies or substantial portions of the Software.
+%	
+%	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+%	SOFTWARE.
+%
+%-----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+\documentclass[darkpython]{../../lib/physics}
+\usepackage{../../lib/physics}
+% available options are: darkpython, lightpython, darkxp, lightxp, vista, black&white, dark, light
+\usepackage[utf8]{inputenc}
+\usepackage[default]{raleway}
+\usepackage[margin=1cm, a4paper]{geometry}
+
+
+%----------------------------------------------------------------------------------------
+% 	PIE CHART
+%----------------------------------------------------------------------------------------
+\input{../../lib/piechart.tex}
+
+
+%----------------------------------------------------------------------------------------
+% 	TIMELINE VERTICAL & HORIZONTAL CHART
+%----------------------------------------------------------------------------------------
+\input{../../lib/timeline.tex}
+
+%------------------------------------------------------------------ Variablen
+
+
+
+\newlength{\rightcolwidth}
+\newlength{\leftcolwidth}
+\setlength{\leftcolwidth}{0.3\textwidth}
+\setlength{\rightcolwidth}{0.65\textwidth}
+
+%------------------------------------------------------------------
+\title{cvrex}
+\author{\LaTeX{} NajmiAchraf}
+\date{September 2021}
+
+\pagestyle{empty}
+\begin{document}
+
+
+\thispagestyle{empty}
+%-------------------------------------------------------------
+
+\section*{Start}
+
+
+
+\header{\bgupper{headerfontbox}{headerfontboxfont}{\bfseries\Huge Achraf Najmi}}{\bg{headerfontbox}{headerfontboxfont}{\large Électro Info Physicien}}{\bg{headerfontbox}{headerfontboxfont}{\small 
+\begin{minipage}[t]{0.55\textwidth}
+Je suis diplômé en Physique Électronique avec une expérience de travail dans des projets de recherche. 
+Je suis toujours à la recherche de nouveaux projets interdisciplinaires passionnants liés à la physique.
+\end{minipage}}}{../pic/me.JPG}{headerblue}{3.5cm}{1cm}
+
+
+
+%------------------------------------------------
+
+% the "invisible" heading has to be in here, otherwise it won't start the Paracols ... strange ...
+\subsection*{}
+\vspace{4em}
+
+\setlength{\columnsep}{1.5cm}
+\columnratio{0.3}[0.65]
+\begin{paracol}{2}
+\hbadness5000
+%\backgroundcolor{c[1]}[rgb]{1,1,0.8} % cream yellow for column-1 %\backgroundcolor{g}[rgb]{0.8,1,1} % \backgroundcolor{l}[rgb]{0,0,0.7} % dark blue for left margin
+
+\paracolbackgroundoptions
+
+% 0.9,0.9,0.9 -- 0.8,0.8,0.8
+
+\vspace{-2em}
+\footnotesize
+{\setasidefontcolour
+\bgupper{cvyellow}{iconcolour}{Faits} \\
+\bg{cvyellow}{iconcolour}{Personnel} \\
+
+\begin{tabular}{c @{\hspace{0.5em}} l | l}
+\faBirthdayCake & Né le &  24/07/1994 \\
+\faMale & Sexe & Mâle \\
+% \faGlobe & Nationality & Moroccan  \\
+\faMapMarker & Emplacement & Casablanca, Maroc \\
+\end{tabular}
+
+% \bigskip
+\smallskip
+
+\bgupper{cvyellow}{iconcolour}{Specialite} \\
+\bg{cvyellow}{iconcolour}{Physique Électronique} \\
+
+\begin{tabular}{c @{\hspace{0.5em}} l | c @{\hspace{0.5em}} l}
+\faDigitalTachograph & Électronique & \faChargingStation & Électrotechnique  \\
+\faMicrochip & Numérique & \faBroadcastTower & Télécommunication \\
+\faIcon{network-wired} & Réseau
+\end{tabular}
+
+% \bigskip
+\smallskip
+
+\bgupper{cvyellow}{iconcolour}{Competences} \\
+\bg{cvyellow}{iconcolour}{Domaines de Compétences}\\
+
+% PIE CHART	
+\begin{piechart}{360}{1}{bgchart}{iconcolour}{skilllabelcolour} \hspace{-1.5em}
+	\slice{33}{Développement}{cvyellow}
+	\slice{27}{Maintenance}{cvred}
+	\slice{23}{Schématisation}{headerblue}
+	\slice{17}{Désigne}{cvorange}
+\end{piechart}
+
+% \bigskip
+\smallskip
+
+\bg{cvyellow}{iconcolour}{Langues} \\
+
+\begin{minipage}[t]{\leftcolwidth}
+\begin{tabular}{c @{\hspace{0.5em}} l | l}
+\faLanguage & \textbf{Français} & B2 \pictofraction{\faCircle}{cvpurple}{4}{black!30}{2}{\tiny}\\
+\faLanguage & \textbf{Anglais} & A2 \pictofraction{\faCircle}{cvpurple}{2}{black!30}{4}{\tiny}
+\end{tabular}
+\end{minipage}
+
+% \bigskip
+\smallskip
+
+\bgupper{cvyellow}{iconcolour}{Informatique} \\
+\bg{cvyellow}{iconcolour}{Langages de Programmation \& OS} \\
+
+\begin{tabular}{l @{\hspace{0.1em}} l @{\hspace{0.1em}} l | @{\hspace{0.5em}} | r @{\hspace{0.3em}} r}
+\icon{\faPython}{labelcolour}{\Large} & \icon{\faCuttlefish}{labelcolour}{\Large} & \icon{\LaTeX}{labelcolour}{\Large} & \icon{\faMicrosoft}{labelcolour}{\Large} & \icon{\faApple}{labelcolour}{\Large} 
+\end{tabular}
+
+% \bigskip
+\smallskip
+
+\bg{cvyellow}{iconcolour}{Bibliothèques} \\
+
+\bubblediagram{{\icon{\faPython}{fontdiagram}{\LARGE} \\ \textbf{\color{fontdiagram}{Python 3}}}, \large \faFileCode \\ pyinstaller, \large \faIcon{square-root-alt} \\ sympy, \large \faChartArea \\ matplotlib, \large \faSortNumericDown \\ numpy, \large \faIcon{feather-alt} \\ tkinter, \large \faTable \\ pandas}
+
+% \bigskip
+\smallskip
+
+\bg{cvyellow}{iconcolour}{Programmes Logiciels} \\
+
+\begin{minipage}[t]{0.3\textwidth}
+\begin{tabular}{r @{\hspace{0.5em}}l}
+     \bg{skilllabelcolour}{iconcolour}{PyCharm IDE} & \barrule{0.4}{0.5em}{materialgreen} \\
+     % \bg{skilllabelcolour}{iconcolour}{Microsoft Office} & \barrule{0.4}{0.5em}{materialamber} \\
+     \bg{skilllabelcolour}{iconcolour}{CLion IDE} & \barrule{0.35}{0.5em}{materialindigo}\\
+     \bg{skilllabelcolour}{iconcolour}{Proteus CAD} & \barrule{0.3}{0.5em}{materialcyan} \\
+     \bg{skilllabelcolour}{iconcolour}{\faMarkdown \hspace{0.1em} Markdown} & \barrule{0.25}{0.5em}{materialorange} \\
+     \bg{skilllabelcolour}{iconcolour}{\faTerminal Terminal} & \barrule{0.2}{0.5em}{materiallime} \\
+     \bg{skilllabelcolour}{iconcolour}{\faCodeBranch \hspace{0.1em} \faGit} & \barrule{0.15}{0.5em}{materialteal} \\
+\end{tabular}
+% \dashrule{}{}
+\vspace{-3em}
+\end{minipage}
+
+\phantom{turn the page}
+
+\phantom{turn the page}
+}
+%-----------------------------------------------------------
+
+\switchcolumn
+
+\small
+\vspace{-2em}
+\section*{Education et Experience}
+\begin{timelinehorizontal}{2019}{2022}{11}{black}
+	
+			\cvevent{6/2019}{2/2019}{Études de licence : Physique Électronique}{2.2}{-2.5}{cvyellow}{iconcolour}{-0.75}
+			
+			\cvevent{9/2019}{9/2021}{Développement Informatique : \hspace{0.1em} \faPython \hspace{0.1em} Python 3 \& \faCuttlefish \hspace{0.1em} C \& \LaTeX}{1.6}{-1.7}{cvyellow}{iconcolour}{-0.75}
+	
+			\cvevent{7/2021}{8/2021}{Piscine d'école 1337 dans UM6P}{1}{-6.7}{cvyellow}{iconcolour}{-0.75}
+			
+\end{timelinehorizontal}
+
+% \vspace{-0.5em}
+
+% \begin{minipage}[t]{0.4\textwidth}
+\section*{Diplômes et Certifications}
+\begin{tabular}{r| p{0.45\textwidth} c}
+
+    \cvcertpy{2021}{Developer Certification \color{cvred}}{Scientific Computing with Python}{freeCodeCamp \color{headerblue}}{\href{https://freecodecamp.org/certification/najmiachraf/scientific-computing-with-python-v7}{\icon{\faFreeCodeCamp}{black}{}\textcolor{black!70}{freecodecamp.org/certification/najmiachraf/scientific-computing-with-python-v7}}}{../pic/python.png} \\
+
+    \cvdegree{2019}{Licence d'Études Fondamentales (LEF) \color{cvred}}{Université Hassan II de Casablanca}{FSBM \color{headerblue}}{Filière : Science Matière Physique | Parcours : Électronique}{../pic/univh2fsbm.png} \\
+    
+    \cvdegree{2017}{Diplôme d'Études Universitaires Générales (DEUG) \color{cvred}}{Université Hassan II de Casablanca}{FSBM \color{headerblue}}{Filière : Science Matière Physique}{../pic/univh2fsbm.png} \\
+    
+    % \cvschool{2012}{Diplôme du Baccalauréat \color{cvred}}{Lycée}{Ibno Zaidone \color{headerblue}}{Série : Sciences Expérimentales | Option : Science de la Vie et la Terre}{../pic/minister.jpg}
+\end{tabular}
+% \end{minipage}\hfill
+
+% \vspace{-0.5em}
+\section*{Projets}
+\begin{tabular}{r| p{0.45\textwidth} c}
+    \cvpython{2021}{Projet de Hydrogéologie}{Python 3.7}{Hydrologie des eaux souterraines \color{cvyellow}}{\href{https://github.com/NajmiAchraf/Hydrogeologie}{\icon{\faGithub}{cvpurple}{}\textcolor{black!70}{github.com/NajmiAchraf/Hydrogeologie (PROJET PRIVÉ)}}}{../pic/earth.png} \\
+    
+    \cvpython{2020}{Projet de MathPy}{Python 3.7}{Calculatrice Scientifique Moderne \color{cvyellow}}{\href{https://www.github.com/NajmiAchraf/MathPy}{\icon{\faGithub}{cvpurple}{}\textcolor{black!70}{github.com/NajmiAchraf/MathPy (PROJET PRIVÉ)}}}{../pic/MathPy.png} \\
+    
+    \cvproject{2018}{Projet de Fin d'Études}{UHIIC}{Faculté des Sciences Ben M'sick \color{cvyellow}}{Conception d'un système photovoltaïque et réalisation d'un suiveur solaire}{../pic/univh2fsbm.png} \\
+    
+    % \cvdegree{2018}{Projet Entreprenariat}{UHIIC}{Faculté des Sciences Ben M'sick \color{cvorange}}{Projet de Création une Entreprise Commerciale "electrocherry".}{../pic/electro.png}
+\end{tabular}
+
+\begin{minipage}[t]{0.3\textwidth}
+\vspace{1em}
+\section*{Programmation}
+\textcolor{black}{Actuellement, je développe des applications en temps réel avec Python, et crée une interface graphique avec tkinter, et extrait du script `file.py` un fichier exécutable par pyinstaller en utilisant auto py to exe.}
+
+\end{minipage}\hfill
+\begin{minipage}[t]{0.3\textwidth}
+\vspace{1em}
+\section*{Logiciels}
+\textcolor{black}{J'utilise régulièrement pour mes projets de développement PyCharm et CLion comme IDE, et j'utilise pour la capture schématique et la simulation Proteus CAD.}
+
+\end{minipage}
+
+\begin{minipage}[t]{0.65\textwidth}
+\vspace{1em}
+\section*{Activites}
+\mbox{
+	\parbox[b][2cm][c]{7cm}{
+		\progressarc{0.55em}{cvyellow}{0.6cm}{timelinebg}{\huge\color{black}\faPlayCircle}{Tutoriels \\}{below}{82.5} \hfill
+		\hspace{-1em}
+		\progressarc{0.55em}{cvyellow}{0.6cm}{timelinebg}{\huge\color{black}\faNewspaper}{Actualités \\Technologies}{below}{75} \hfill
+		\hspace{-1em}
+		\progressarc{0.55em}{cvyellow}{0.6cm}{timelinebg}{\huge\color{black}\faChess}{Jeux \\Cérébrale}{below}{67.5} \hfill
+		\progressarc{0.55em}{cvyellow}{0.6cm}{timelinebg}{\huge\color{black}\faRunning}{Sport \\}{below}{60}
+	}
+
+	\parbox[b][2.2cm][c]{5cm}{
+			\textcolor{black}{Parmis les dominantes activités que je pratique est de naviguer sur internet à la recherche de nouvelles sur le monde d'informatique et  entraîné sur tous les tutoriels qui m'intéresse.}
+		}
+	}
+
+\end{minipage}
+
+
+
+
+
+
+
+
+
+\vfill{} % Whitespace before final footer
+
+%----------------------------------------------------------------------------------------
+%	FINAL FOOTER
+%----------------------------------------------------------------------------------------
+\setlength{\parindent}{0pt}
+\begin{minipage}[t]{\rightcolwidth}
+\begin{center}\fontfamily{\sfdefault}\selectfont \color{black!70}
+{\href{callto:+212622902221}{\icon{\faMobile}{black}{} \textcolor{black!70}{+212 6 22 90 22 21}} \href{mailto:najmi.achraf@gmail.com}{\icon{\faAt}{red}{} \textcolor{black!70}{najmi.achraf@gmail.com}} \href{https://www.github.com/NajmiAchraf}{\icon{\faGithub}{cvpurple}{} \textcolor{black!70}{github.com/NajmiAchraf}}  \newline\href{https://www.linkedin.com/in/najmiachraf}{\icon{\faLinkedin}{blue}{} \textcolor{black!70}{linkedin.com/in/najmiachraf}}\href{https://stackoverflow.com/users/12854948}{\icon{\faStackOverflow}{black}{} \textcolor{black!70}{stackoverflow.com/users/12854948}}
+}
+\end{center}\vspace{-2em}
+\end{minipage}
+
+
+\end{paracol}
+\end{document}
