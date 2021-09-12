@@ -253,9 +253,19 @@ Please replace them with your own photos and logos if you use this template!
 
 This is how to invoke the different color themes
 
+For IT Electronic :
+
 ```latex
 \documentclass[darkpython]{hipstercv}
 % insert whatever style you want to use where it says 'darkpython' now:
+% available options are: darkpython, lightpython, darkxp, lightxp, vista, black&white, dark, light
+```
+
+For IT Hydrogeology :
+
+```latex
+\documentclass[darkxp]{hipstercv}
+% insert whatever style you want to use where it says 'darkxp' now:
 % available options are: darkpython, lightpython, darkxp, lightxp, vista, black&white, dark, light
 ```
 ## How to build?
