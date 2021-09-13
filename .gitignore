@@ -1,3 +1,6 @@
+*.aux
+*.log
+*.out
 main.aux
 main.log
 main.out
