@@ -1,15 +1,10 @@
 <h1 align="center">
   CV ReX
-</h1>
-
-<h1 align="center">
+  <br />
   <img alt="cvrex icon" src="./previews/cvrex.svg" height="300px" />
   <br />
-</h1>
-
-<h2 align="center">
   LaTeX Resume
-</h2>
+</h1>
 
 <div align="center">
   <a href="http://www.repostatus.org/#active" title="Project Status: Active – The project has reached a stable, usable state and is being actively developed.">
