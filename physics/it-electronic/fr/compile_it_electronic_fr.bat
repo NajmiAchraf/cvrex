@@ -51,3 +51,19 @@ pdflatex --jobname="CV IT.DARK.PY FR %datetimef%" main.tex
 pdflatex --jobname="CV IT.DARK.PY FR %datetimef%" main.tex
 
 del *.aux *.log *.out main.synctex.gz
+
+magick -density 192 "*.B&W*.pdf" -resize 794 -depth 8 -quality 96 it-electronic-black^&white_fr.png
+
+magick -density 192 "*.DARK.PY*.pdf" -resize 794 -depth 8 -quality 96 it-electronic-darkpython_fr.png
+
+magick -density 192 "*.DARK.XP*.pdf" -resize 794 -depth 8 -quality 96 it-electronic-darkxp_fr.png
+
+magick -density 192 "*.DARK *.pdf" -resize 794 -depth 8 -quality 96 it-electronic-dark_fr.png
+
+magick -density 192 "*.LIGHT.PY*.pdf" -resize 794 -depth 8 -quality 96 it-electronic-lightpython_fr.png
+
+magick -density 192 "*.LIGHT.XP*.pdf" -resize 794 -depth 8 -quality 96 it-electronic-lightxp_fr.png
+
+magick -density 192 "*.LIGHT *.pdf" -resize 794 -depth 8 -quality 96 it-electronic-light_fr.png
+
+magick -density 192 "*.VISTA*.pdf" -resize 794 -depth 8 -quality 96 it-electronic-vista_fr.png
