@@ -15,3 +15,4 @@ pdflatex --jobname="CV IT.DEV.PY EN %datetimef%" main.tex
 del *.aux *.log *.out main.synctex.gz
 
 magick -density 192 "*.DEV*.pdf" -resize 794 -depth 8 -quality 96 it-dev_en.png
+move /Y ./"it-dev_en.png" ../../previews/
