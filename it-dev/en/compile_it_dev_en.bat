@@ -10,9 +10,9 @@ if "%day:~0,1%" == " " set day=0%day:~1,1%
 
 set datetimef=%year%-%month%-%day%
 
-pdflatex --jobname="CV IT.DEV.PY EN %datetimef%" main.tex
+pdflatex --jobname="CV IT.DEV EN %datetimef%" main.tex
 
 del *.aux *.log *.out main.synctex.gz
 
-magick -density 192 "*.DEV*.pdf" -resize 794 -depth 8 -quality 96 it-dev_en.png
+magick -density 192 "*.DEV*.pdf" -resize 826 -depth 8 -quality 96 it-dev_en.png
 move /Y ./"it-dev_en.png" ../../previews/
