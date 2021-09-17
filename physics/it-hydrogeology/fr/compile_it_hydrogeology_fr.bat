@@ -11,45 +11,45 @@ if "%day:~0,1%" == " " set day=0%day:~1,1%
 set datetimef=%year%-%month%-%day%
 
 copy main.tex compile.tex
-python modify.py "darkpython"
+python build.py "darkpython"
 
-pdflatex --jobname="CV HIGH.DARK.PY FR %datetimef%" compile.tex
-pdflatex --jobname="CV HIGH.DARK.PY FR %datetimef%" compile.tex
+pdflatex -quiet --jobname="CV HIGH.DARK.PY FR %datetimef%" compile.tex
+pdflatex -quiet --jobname="CV HIGH.DARK.PY FR %datetimef%" compile.tex
 
-python modify.py "lightpython"
+python build.py "lightpython"
 
-pdflatex --jobname="CV HIGH.LIGHT.PY FR %datetimef%" compile.tex
-pdflatex --jobname="CV HIGH.LIGHT.PY FR %datetimef%" compile.tex
+pdflatex -quiet --jobname="CV HIGH.LIGHT.PY FR %datetimef%" compile.tex
+pdflatex -quiet --jobname="CV HIGH.LIGHT.PY FR %datetimef%" compile.tex
 
-python modify.py "darkxp"
+python build.py "darkxp"
 
-pdflatex --jobname="CV HIGH.DARK.XP FR %datetimef%" compile.tex
-pdflatex --jobname="CV HIGH.DARK.XP FR %datetimef%" compile.tex
+pdflatex -quiet --jobname="CV HIGH.DARK.XP FR %datetimef%" compile.tex
+pdflatex -quiet --jobname="CV HIGH.DARK.XP FR %datetimef%" compile.tex
 
-python modify.py "lightxp"
+python build.py "lightxp"
 
-pdflatex --jobname="CV HIGH.LIGHT.XP FR %datetimef%" compile.tex
-pdflatex --jobname="CV HIGH.LIGHT.XP FR %datetimef%" compile.tex
+pdflatex -quiet --jobname="CV HIGH.LIGHT.XP FR %datetimef%" compile.tex
+pdflatex -quiet --jobname="CV HIGH.LIGHT.XP FR %datetimef%" compile.tex
 
-python modify.py "vista"
+python build.py "vista"
 
-pdflatex --jobname="CV HIGH.VISTA FR %datetimef%" compile.tex
-pdflatex --jobname="CV HIGH.VISTA FR %datetimef%" compile.tex
+pdflatex -quiet --jobname="CV HIGH.VISTA FR %datetimef%" compile.tex
+pdflatex -quiet --jobname="CV HIGH.VISTA FR %datetimef%" compile.tex
 
-python modify.py "black&white"
+python build.py "black&white"
 
-pdflatex --jobname="CV HIGH.B&W FR %datetimef%" compile.tex
-pdflatex --jobname="CV HIGH.B&W FR %datetimef%" compile.tex
+pdflatex -quiet --jobname="CV HIGH.B&W FR %datetimef%" compile.tex
+pdflatex -quiet --jobname="CV HIGH.B&W FR %datetimef%" compile.tex
 
-python modify.py "dark"
+python build.py "dark"
 
-pdflatex --jobname="CV HIGH.DARK FR %datetimef%" compile.tex
-pdflatex --jobname="CV HIGH.DARK FR %datetimef%" compile.tex
+pdflatex -quiet --jobname="CV HIGH.DARK FR %datetimef%" compile.tex
+pdflatex -quiet --jobname="CV HIGH.DARK FR %datetimef%" compile.tex
 
-python modify.py "light"
+python build.py "light"
 
-pdflatex --jobname="CV HIGH.LIGHT FR %datetimef%" compile.tex
-pdflatex --jobname="CV HIGH.LIGHT FR %datetimef%" compile.tex
+pdflatex -quiet --jobname="CV HIGH.LIGHT FR %datetimef%" compile.tex
+pdflatex -quiet --jobname="CV HIGH.LIGHT FR %datetimef%" compile.tex
 
 del *.aux *.log *.out main.synctex.gz compile.tex
 

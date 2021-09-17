@@ -10,7 +10,7 @@ if "%day:~0,1%" == " " set day=0%day:~1,1%
 
 set datetimef=%year%-%month%-%day%
 
-pdflatex --jobname="CV IT.DEV EN %datetimef%" main.tex
+pdflatex -quiet --jobname="CV IT.DEV EN %datetimef%" main.tex
 
 del *.aux *.log *.out main.synctex.gz
 

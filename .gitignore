@@ -1,6 +1,7 @@
 *.aux
 *.log
 *.out
+*.synctex.gz
 main.aux
 main.log
 main.out
