@@ -45,41 +45,34 @@ Please replace them with your own photos and logos if you use this template!
 The following guide just briefly describes the requirements and build procedure as there are many ways to install a LaTeX distribution on various OS.
 
 * ****Build Procedure****
+	* ***Downloading and Editing***
+		* Clone or download this project. 
+		* Change to a template folder, which contains a `main.tex` file do.
+		* Edit the `main.tex` according to your CV credentials.
 
-  * ***Downloading and Editing***
-    
-    * Clone or download this project. 
-    * Change to a template folder, which contains a `main.tex` file do.
-    * Edit the `main.tex` according to your CV credentials.
+	* ***Terminal build method***
+		* Run `pdflatex` (build/compile).
+		* The `main.pdf` file should show on output.
 
-  * ***Terminal build method***
+	* *****Additional build procedure for windows users and for forkers*****
+		* ***The following two methods needs more programs to install :***
 
-    * Run `pdflatex` (build/compile).
-    * The `main.pdf` file should show on output.
+			* [`*` Python](<https://www.python.org/downloads/>) is to create a copy of `main.tex` named `compile.tex` and modify it and build from it pdf(s) and image(s).
+			* [`**` ImageMagick](<https://imagemagick.org/script/download.php>) & [`**` Ghostscript](<https://www.ghostscript.com/download.html>) to convert pdf(s) to image(s).
 
-  * *****Additional build procedure for windows users and for the forcker*****
+		1. ***Batchfile build method***
+			* Execute `compile_"folder container name".bat` (build/compile).
+			* The `CV IT.DEV "language" "date".pdf` file(s) should show on output.
+			* The converted image(s) will be moved to `previews` folder.
 
-      0. ***The following two methods needs more programs to install :***
-        
-          * [`*` Python](<https://www.python.org/downloads/>) is to create a copy of `main.tex` named `compile.tex` and modify it and build from it pdf(s) and image(s).
-
-          * [`**` ImageMagick](<https://imagemagick.org/script/download.php>) & [`**` Ghostscript](<https://www.ghostscript.com/download.html>) to convert pdf(s) to image(s).
-
-      1. ***Batchfile build method***
-              
-          * Execute `compile_"folder container name".bat` (build/compile).
-          * The `CV IT.DEV "language" "date".pdf` file(s) should show on output.
-          * The converted image(s) will be moved to `previews` folder.
-
-      2. ***Python build method***
-              
-          * Execute `build.py` (build/compile).
-          * The `CV IT.DEV "language" "date".pdf` file(s) should show on output.
-          * The converted image(s) will be moved to `previews` folder.
+		2. ***Python build method***
+			* Execute `build.py` (build/compile).
+			* The The `CV IT.DEV "language" "date".pdf` file(s) should show on output.
+			* The converted image(s) will be moved to `previews` folder.
 
 `*` recommended for all users
 
-`**` additional to the forcker
+`**` additional for forkers
 
 ## License
 
