@@ -33,16 +33,42 @@ The build does only relie on pdflatex and the packages, including the dependenci
 
 The following guide just briefly describes the requirements and build procedure as there are many ways to install a LaTeX distribution on various OS.
 
+* ****Build Procedure****
 
-### Build Procedure
+  * ***Downloading and Editing***
+    
+    * Clone or download this project. 
+    * Change to a template folder, which contains a `main.tex` file do.
+    * Edit the `main.tex` according to your CV credentials.
 
+  * ***Terminal build method***
 
- * Clone or download this project. 
- * Change to a template folder, which contains a `main.tex` file do
- * Edit the `main.tex` according to your CV credentials, optionally change settings and colors etc.
- * Run `pdflatex` (build/compile) 
- * The `main.pdf` should show the output.
+    * Run `pdflatex` (build/compile).
+    * The `main.pdf` file should show on output.
 
+  * *****Additional build procedure for windows users and for the forcker*****
+
+      0. ***The following two methods needs more programs to install :***
+        
+          * [`*` Python](<https://www.python.org/downloads/>) is to create a copy of `main.tex` named `compile.tex` and modify it and build from it pdf(s) and image(s).
+
+          * [`**` ImageMagick](<https://imagemagick.org/script/download.php>) & [`**` Ghostscript](<https://www.ghostscript.com/download.html>) to convert pdf(s) to image(s).
+
+      1. ***Batchfile build method***
+              
+          * Execute `compile_"folder container name".bat` (build/compile).
+          * The `CV IT.DEV FR "date".pdf` file(s) should show on output.
+          * The converted image(s) will be moved to `previews` folder.
+
+      2. ***Python build method***
+              
+          * Execute `build.py` (build/compile).
+          * The `CV IT.DEV FR "date".pdf` file(s) should show on output.
+          * The converted image(s) will be moved to `previews` folder.
+
+`*` recommended for all users
+
+`**` additional to the forcker
 
 ## License
 
@@ -50,7 +76,7 @@ MIT License
 
 Copyright (c) 2021 ACHRAF NAJMI
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files CV Rex, to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
