@@ -103,7 +103,7 @@ The following guide just briefly describes the requirements and build procedure 
 			* [`**` ImageMagick](<https://imagemagick.org/script/download.php>) & [`**` Ghostscript](<https://www.ghostscript.com/download.html>) to convert pdf(s) to image(s).
 
 		1. ***Batchfile build method***
-			* Execute `compile_"folder container name".bat` (build/compile).
+			* Execute `compile_it_electronic_en.bat` (build/compile).
 			* The `CV IT."theme name" EN "date".pdf` file(s) should show on output.
 			* The converted image(s) will be moved to `previews` folder.
 
