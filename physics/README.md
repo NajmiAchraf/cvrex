@@ -283,7 +283,7 @@ The following guide just briefly describes the requirements and build procedure 
 		* Edit the `main.tex` according to your CV credentials.
 
 	* ***Terminal build method***
-		* Run `pdflatex` (build/compile).
+		* Run `pdflatex main.tex` (build/compile).
 		* The `main.pdf` file should show on output.
 
 	* *****Additional build procedure for windows users and for forkers*****
