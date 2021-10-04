@@ -38,7 +38,8 @@
 % param 2: end year
 % param 3: overall width
 % param 4: overall height             {\parbox{\myboxwidth}
-\newenvironment{timelinehorizontal}[4]{
+% param 5: level width
+\newenvironment{timelinehorizontal}[5]{
     \newcommand{\cvcategory}[2]{
         \node[label=\mbox{\colorbox{##1}{\strut\hspace{2pt}}\colorbox{white}{\textcolor{black}{##2}}}] at (0,-5) {}; % start year
     }
@@ -72,17 +73,21 @@
                 \pgfmathparse{#3/\fullrange*((\yearf-#1)+(\monthf/12))} 
                 \let\eventposition\pgfmathresult
                 
-                \filldraw[fill=##6, draw=none, opacity=0.9] (\startexp, 0.15+##8) rectangle (\endexp, 0.15+##8+0.3);
+                % , opacity=0.9
+                \filldraw[fill=##6, draw=none] (\startexp, ##8) rectangle (\endexp, #5+##8);
+                
+                % ex-line
+				\draw[draw=##6, line width=1.5pt, anchor=west] (\startexp, 0) -- (\startexp, ##8);
                 
                 %line
 				\draw[draw=##6, line width=1.5pt, anchor=west] (\eventposition, 0) -- (\eventposition+##5, ##4); 		
 				
 				%textbox
-				\node[fill=##6, right=-0.1em, inner sep=0.5em, label={[label distance=0]0:\colorbox{timelinebg}{\textcolor{timelinefont}{##3}}}] at (\eventposition+##5,##4) {\textcolor{##7}{##1}};
+				\node[fill=##6, right=-0.1em, inner sep=0.5em, label={[label distance=-4]0:\colorbox{timelinebg}{\textcolor{timelinefont}{##3}}}] at (\eventposition+##5,##4) {\textcolor{##7}{##1}};
 				
 				%draw year below
 				% \node[below, inner sep=1.5em] at (\eventposition, 0) {##1};
-				\node[below, inner sep=1em] at (\eventposition, 0) {\monthf\//\pgfmathprintnumber{\shortyear}};
+				% \node[below, inner sep=1em] at (\eventposition, 0) {\monthf\//\pgfmathprintnumber{\shortyear}};
 				
 				%year circle
 				\draw[fill=white, draw=##6, line width=0.1em]  (\eventposition, 0) circle (0.1);
