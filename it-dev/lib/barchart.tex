@@ -69,7 +69,7 @@
 		\filldraw[fill=#7, draw=none] (\barone, -\barx) rectangle (\barone+\bartwo,-\barx-\barwidth);
 		\filldraw[fill=#8, draw=none] (\barone+\bartwo,-\barx ) rectangle (\barone+\bartwo+\barthree,-\barx-\barwidth);
 
-		\node [label=180:\colorbox{#5}{\textcolor{#4}{##2}}] at (0,-\barx-0.175) {};
+		\node [label=180:\fcolorbox{#4}{#5}{\textcolor{#4}{##2}}] at (0,-\barx-0.175) {};
 		\addtocounter{barcount}{1}
 	}
 	\begin{tikzpicture}
