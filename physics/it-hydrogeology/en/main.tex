@@ -1,0 +1,314 @@
+%-----------------------------------------------------------------------------------------------------------------------------------------------
+%
+%	MIT License
+%	
+%	Copyright (c) 2021 ACHRAF NAJMI
+%	
+%	Permission is hereby granted, free of charge, to any person obtaining a copy
+%	of this software and associated documentation files (the "Software"), to deal
+%	in the Software without restriction, including without limitation the rights
+%	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%	copies of the Software, and to permit persons to whom the Software is
+%	furnished to do so, subject to the following conditions:
+%	
+%	The above copyright notice and this permission notice shall be included in all
+%	copies or substantial portions of the Software.
+%	
+%	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+%	SOFTWARE.
+%
+%-----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+\documentclass[darkxp]{../../lib/physics}
+\usepackage{../../lib/physics}
+% available options are: darkpython, lightpython, darkxp, lightxp, vista, black&white, dark, light
+\usepackage[utf8]{inputenc}
+\usepackage[default]{raleway}
+\usepackage[margin=1cm, a4paper]{geometry}
+
+
+%----------------------------------------------------------------------------------------
+% 	PIE CHART
+%----------------------------------------------------------------------------------------
+\input{../../lib/piechart.tex}
+
+
+%----------------------------------------------------------------------------------------
+% 	TIMELINE VERTICAL & HORIZONTAL CHART
+%----------------------------------------------------------------------------------------
+\input{../../lib/timeline.tex}
+
+%------------------------------------------------------------------ Variablen
+
+
+
+\newlength{\rightcolwidth}
+\newlength{\leftcolwidth}
+\setlength{\leftcolwidth}{0.3\textwidth}
+\setlength{\rightcolwidth}{0.65\textwidth}
+
+%------------------------------------------------------------------
+\title{cvrex}
+\author{\LaTeX{} NajmiAchraf}
+\date{September 2021}
+
+\pagestyle{empty}
+\begin{document}
+
+
+\thispagestyle{empty}
+%-------------------------------------------------------------
+
+\section*{Start}
+
+
+
+\header{\bgupper{headerfontbox}{headerfontboxfont}{\bfseries\Huge Noura Najmi}}{\bg{headerfontbox}{headerfontboxfont}{\large Hydro-Informatician}}{\bg{headerfontbox}{headerfontboxfont}{\small 
+\begin{minipage}[t]{0.555\textwidth}
+I am a hydro-informatician with experience in research projects. I am constantly seeking new exciting interdisciplinary projects related to the water domain.
+\end{minipage}}}{../pic/me.JPG}{headerblue}{3.5cm}{1cm}
+
+
+
+%------------------------------------------------
+
+% the "invisible" heading has to be in here, otherwise it won't start the Paracols ... strange ...
+\subsection*{}
+\vspace{4em}
+
+\setlength{\columnsep}{1.5cm}
+\columnratio{0.3}[0.65]
+\begin{paracol}{2}
+\hbadness5000
+%\backgroundcolor{c[1]}[rgb]{1,1,0.8} % cream yellow for column-1 %\backgroundcolor{g}[rgb]{0.8,1,1} % \backgroundcolor{l}[rgb]{0,0,0.7} % dark blue for left margin
+
+\paracolbackgroundoptions
+
+% 0.9,0.9,0.9 -- 0.8,0.8,0.8
+
+\vspace{-2em}
+\footnotesize
+{\setasidefontcolour
+\bgupper{cvyellow}{iconcolour}{Personal} \\
+\bg{cvyellow}{iconcolour}{Data} \\
+
+\begin{tabular}{c @{\hspace{0.5em}} l | l}
+\faBirthdayCake & Born &  22/05/1997 \\
+\faFemale & Sex & Female \\
+% \faGlobe & Nationality & Moroccan \\
+\faMapMarker & Location & Casablanca, Maroc \\
+\end{tabular}
+
+\bigskip
+
+\bgupper{cvyellow}{iconcolour}{Skills} \\
+\bg{cvyellow}{iconcolour}{Skill Domains}\\
+
+% PIE CHART	
+\begin{piechart}{360}{1}{bgchart}{iconcolour}{skilllabelcolour}\hspace{-1.5em}
+	\slice{33}{Modelisation}{cvyellow}
+	\slice{27}{Simulation}{cvred}
+	\slice{23}{Cartography}{headerblue}
+	\slice{17}{Development}{cvorange}
+\end{piechart}
+
+\bigskip
+
+\bg{cvyellow}{iconcolour}{Languages} \\
+
+\begin{minipage}[t]{\leftcolwidth}
+\begin{tabular}{c @{\hspace{0.5em}} l | l}
+\faLanguage & \textbf{French} & B2 \pictofraction{\faCircle}{cvpurple}{4}{black!30}{2}{\tiny}\\
+\faLanguage & \textbf{English} & A2 \pictofraction{\faCircle}{cvpurple}{2}{black!30}{4}{\tiny}
+\end{tabular}
+\end{minipage}
+
+\bigskip
+
+\bgupper{cvyellow}{iconcolour}{Speciality} \\
+\bg{cvyellow}{iconcolour}{Water and Environment} \\
+
+\begin{tabular}{c @{\hspace{0.5em}} l | c @{\hspace{0.5em}} l}% \faAngleDoubleRight
+\faIcon{water} & Hydraulics & \faIcon{city} & Sanitation \\
+\faIcon{globe-africa} & Hydrogeology & & Urban \\
+\faIcon{tint} & Hydrology & \faIcon{hand-holding-water} & Water Analysis \\
+\faIcon{satellite} & Remote Sensing & & and Treatment \\
+\faIcon{hard-hat} & Geotechnical & \faIcon{map-marked-alt} & GIS
+	
+\end{tabular}
+
+\bigskip
+
+\bgupper{cvyellow}{iconcolour}{IT} \\
+\bg{cvyellow}{iconcolour}{Software Programs} \\
+
+\bubblediagram{{\icon{\Large\faLaptop}{fontdiagram}{\Large} \\ \textbf{\color{fontdiagram}{ArcGIS}}}, SNAP, AutoCad, Mike\\by\\DHI, HEC-RAS, GMS\\Aquaveo, Ms Office}
+
+% \bubblediagram{{\icon{\Large\faCode}{fontdiagram}{\Large} \\ \textbf{\color{fontdiagram}{\Large C}}}, \large Matlab, \large Java}
+
+\bigskip
+
+
+\bg{cvyellow}{iconcolour}{Operating system}\\
+
+\icon{\faWindows}{labelcolour}{\Large}\color{labelcolour}{\large Windows}
+
+\bigskip
+% \smallskip
+
+\bg{cvyellow}{iconcolour}{Programming Languages} \\
+
+\begin{minipage}[t]{0.3\textwidth} % \vfill
+\begin{tabular}{r @{\hspace{0.5em}}l}
+	 \bg{skilllabelcolour}{iconcolour}{\faChartArea \hspace{0.1em} Matlab} & \barrule{0.4}{0.5em}{materialcyan} \\
+	%  \bg{skilllabelcolour}{iconcolour}{\faIcon{java} \hspace{0.1em} Java} & \barrule{0.3}{0.5em}{materialorange} \\
+	 \bg{skilllabelcolour}{iconcolour}{\faIcon{copyright} \hspace{0.1em} Langage C} & \barrule{0.2}{0.5em}{materialindigo} \\
+	 % \bg{skilllabelcolour}{iconcolour}{HEC-RAS} & \barrule{0.3}{0.5em}{materialteal} \\
+	 % \bg{skilllabelcolour}{iconcolour}{Eclipse IDE} & \barrule{0.25}{0.5em}{materiallime} \\
+	 % \bg{skilllabelcolour}{iconcolour}{GMS Aquaveo} & \barrule{0.2}{0.5em}{materiallime} \\
+	 % \bg{skilllabelcolour}{iconcolour}{\faCodeBranch \hspace{0.1em} \faGit} & \barrule{0.15}{0.5em}{materialamber} \\
+		
+\end{tabular}
+
+% \begin{minipage}[t]{0.3\textwidth} % \vfill
+% \begin{tabular}{r @{\hspace{0.5em}}l}
+	 % \bg{skilllabelcolour}{iconcolour}{ArcGIS} & \barrule{0.45}{0.5em}{materiallime} \\
+	 % \bg{skilllabelcolour}{iconcolour}{Code Block} & \barrule{0.4}{0.5em}{materialteal} \\
+	 % \bg{skilllabelcolour}{iconcolour}{Adobe Illustrator} & \barrule{0.35}{0.5em}{materialorange} \\
+	 % \bg{skilllabelcolour}{iconcolour}{HEC-RAS} & \barrule{0.3}{0.5em}{materialcyan} \\
+	 % \bg{skilllabelcolour}{iconcolour}{Eclipse IDE} & \barrule{0.25}{0.5em}{materialindigo} \\
+	 % \bg{skilllabelcolour}{iconcolour}{GMS Aquaveo} & \barrule{0.2}{0.5em}{materiallime} \\
+	 % \bg{skilllabelcolour}{iconcolour}{\faCodeBranch \hspace{0.1em} \faGit} & \barrule{0.15}{0.5em}{materialamber} \\
+		
+% \end{tabular}
+
+% \dashrule{}{}
+\vspace{-3em}
+\end{minipage}
+
+
+\phantom{turn the page}
+
+\phantom{turn the page}
+}
+%-----------------------------------------------------------
+
+\switchcolumn
+
+\small
+\vspace{-2em}
+% \section*{Education}
+% \begin{timelinehorizontal}{2018}{2024}{11}{black}{0.15}
+			
+% 			\cvevent{1/2020}{6/2023}{Master Spécialisé : Hydroinformatique et Gestion des Hydrosystèmes}{1.8}{-5.1}{cvyellow}{iconcolour}{-0.4}
+	
+% 			\cvevent{9/2018}{6/2019}{Licence : Physique Mécanique Énergétique}{1.1}{0}{headerblue}{iconcolour}{-0.4}
+			
+% \end{timelinehorizontal}
+
+% \vspace{-0.5em}
+
+% \begin{minipage}[t]{0.4\textwidth}
+
+\section*{Projects}
+
+\begin{tabular}{r| p{0.45\textwidth} c}
+
+	\cvproject{2022}{Final Year Project (Internship)}{INRH}{National Institute of Fisheries Research \color{cvyellow}}{Bidimensional Hydrodynamic Modeling of Free Surface Flow : Application in El Oualidia, Morocco.}{../pic/INRH.jpg} \\
+
+	\cvproject{2021}{Urban Sanitation Project}{Ibn Tofail University, Kenitra}{Faculty of Sciences \color{cvyellow}}{Sanitation of the Bab Berred area.}{../pic/Picture1.png} \\
+
+	\cvproject{2021}{Space Remote Sensing Project}{Ibn Tofail University, Kenitra}{Faculty of Sciences \color{cvyellow}}{Mapping of flooded areas using Sentinel-1 data and a simple technique : combining pre-flood and during-flood images.}{../pic/Picture1.png} \\
+
+
+	\cvproject{2021}{Hydrological Modeling Project}{Ibn Tofail University, Kenitra}{Faculty of Sciences \color{cvyellow}}{Hydraulic Simulation of Oued Taregha.}{../pic/Picture1.png} \\
+
+	\cvproject{2019}{Final Year Project}{UHIIC}{Faculty of Sciences Ben M'sick \color{cvyellow}}{Molecular Mechanics Modeling of Graphene Structures.}{../pic/univh2fsbm.png} \\
+
+	\cvproject{2019}{Entrepreneurship Project}{UHIIC}{Faculty of Sciences Ben M'sick \color{cvyellow}}{Development of a human safety product : "iProtection" gas leak detector.}{../pic/iPROTECTION.png}
+
+\end{tabular}
+
+\section*{Degrees}
+\begin{tabular}{r| p{0.45\textwidth} c}
+
+	\cvdegree{2023}{Specialized Master's Degree (MS) \color{cvred}}{Ibn Tofail University, Kenitra}{Faculty of Sciences \color{headerblue}}{Specialization: Hydroinformatics and Hydrosystem Management}{../pic/univitkfs.png} \\
+
+	\cvdegree{2019}{Bachelor's Degree (BS) \color{cvred}}{Hassan II University, Casablanca}{FSBM \color{headerblue}}{Major : Material Physics | Track: Energy Mechanics}{../pic/univh2fsbm.png} \\
+
+	% \cvdegree{2018}{Diploma in General University Studies (DEUG) \color{cvred}}{Hassan II University, Casablanca}{FSBM \color{headerblue}}{Major : Material Physics}{../pic/univh2fsbm.png} \\
+
+	\cvschool{2015}{High School Diploma \color{cvred}}{High School}{Ibnou Zaidone \color{headerblue}}{Track : Experimental Sciences | Option : Physics}{../pic/minister.jpg}
+
+\end{tabular}
+
+% \end{minipage}\hfill
+
+% \vspace{-0.5em}
+
+\begin{minipage}[t]{0.3\textwidth}
+\vspace{1em}
+\section*{Software}
+\textcolor{black}{For my projects in hydraulic system modeling and cartography, I regularly use simulation software such as Mike by DHI, ArcGIS, and HEC-RAS.}
+
+\end{minipage}\hfill
+\begin{minipage}[t]{0.3\textwidth}
+\vspace{1em}
+\section*{Programming}
+\textcolor{black}{Currently, I am working in real-time using MATLAB as a development tool for everything related to the field of hydrology and hydrogeology.}
+
+\end{minipage}
+
+\begin{minipage}[t]{0.65\textwidth}
+\vspace{1em}
+\section*{Activities}
+\mbox{
+	\parbox[b][2.2cm][c]{7cm}{
+		\progressarc{0.55em}{cvyellow}{0.6cm}{timelinebg}{\huge\color{black}\faPlayCircle}{Tutorial \\}{below}{82.5} \hfill
+		\progressarc{0.55em}{cvyellow}{0.6cm}{timelinebg}{\huge\color{black}\faNewspaper}{Booking \\}{below}{75} \hfill
+		\progressarc{0.55em}{cvyellow}{0.6cm}{timelinebg}{\huge\color{black}\faChess}{Brain Games \\}{below}{67.5} \hfill
+		\progressarc{0.55em}{cvyellow}{0.6cm}{timelinebg}{\huge\color{black}\faRunning}{Sport \\}{below}{60}
+	}
+
+	\parbox[b][2.5cm][c]{5cm}{
+		\textcolor{black}{One of the main activities I engage in is browsing the internet to search for new information in my field of study, as well as practicing various tutorials that interest me.}
+	}
+}
+
+\end{minipage}
+
+
+
+
+
+
+
+
+
+\vfill{} % Whitespace before final footer
+
+%----------------------------------------------------------------------------------------
+%	FINAL FOOTER
+%----------------------------------------------------------------------------------------
+\setlength{\parindent}{0pt}
+\begin{minipage}[t]{\rightcolwidth}
+\begin{center}\fontfamily{\sfdefault}\selectfont \color{black!70}
+{\href{callto:+212712649892}{\icon{\faMobile}{black}{} \textcolor{black!70}{+212 7 12 64 98 92}}
+{\href{mailto:noura.najmi@uit.ac.ma}{\icon{\faAt}{red}{} \textcolor{black!70}{noura.najmi@uit.ac.ma}}\\
+\href{https://www.linkedin.com/in/noura-najmi-1a0a73275/}{\icon{\faLinkedin}{blue}{} \textcolor{black!70}{linkedin.com/in/noura-najmi-1a0a73275}} 
+}
+
+
+}
+\end{center}\vspace{-0.5em} % \vspace{-2em}
+\end{minipage}
+
+
+\end{paracol}
+\end{document}
