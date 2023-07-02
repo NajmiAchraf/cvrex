@@ -193,7 +193,7 @@ Please replace them with your own photos and logos if you use this template!
 </table>
 </div>
 
-<!---
+
 ## IT Hydrogeology English
 
 <table width="100%" margin-left="auto" margin-right="auto">
@@ -251,7 +251,7 @@ Please replace them with your own photos and logos if you use this template!
   </tr>
 </table>
 </div>
---->
+
 
 ## Usage
 

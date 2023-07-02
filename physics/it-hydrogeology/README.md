@@ -79,31 +79,30 @@ Please replace them with your own photos and logos if you use this template!
 </div>
 
 
-<!---
 ## IT Hydrogeology English
 
 <table width="100%" margin-left="auto" margin-right="auto">
   <tr>
-    <th>IT Hydrogeology darkpython EN</th>
-    <th>IT Hydrogeology darkxp EN</th>
-    <th>IT Hydrogeology black&white EN</th>
-    <th>IT Hydrogeology dark EN</th>
+    <th>IT Hydrogeology darkpythonEN</th>
+    <th>IT Hydrogeology darkxpEN</th>
+    <th>IT Hydrogeology black&whiteEN</th>
+    <th>IT Hydrogeology darkEN</th>
   </tr>
   <tr>
     <td width="25%">
-      <img src="../previews/it-hydrogeology-darkpython_en.png" 
+      <img src="../../previews/it-hydrogeology-darkpython_en.png" 
         alt="IT Hydrogeology CV example preview" />
     </td>
     <td width="25%">
-      <img src="../previews/it-hydrogeology-darkxp_en.png" 
+      <img src="../../previews/it-hydrogeology-darkxp_en.png" 
         alt="IT Hydrogeology CV example preview" />
     </td>
     <td width="25%">
-      <img src="../previews/it-hydrogeology-black&white_en.png" 
+      <img src="../../previews/it-hydrogeology-black&white_en.png" 
         alt="IT Hydrogeology CV example preview" />
     </td>
     <td width="25%">
-      <img src="../previews/it-hydrogeology-dark_en.png" 
+      <img src="../../previews/it-hydrogeology-dark_en.png" 
         alt="IT Hydrogeology CV example preview" />
     </td>
   </tr>
@@ -112,32 +111,31 @@ Please replace them with your own photos and logos if you use this template!
 
 <table width="100%" margin-left="auto" margin-right="auto">
   <tr>
-    <th>IT Hydrogeology lighpython EN</th>
-    <th>IT Hydrogeology lightxp EN</th>
-    <th>IT Hydrogeology vista EN</th>
-    <th>IT Hydrogeology light EN</th>
+    <th>IT Hydrogeology lighpythonEN</th>
+    <th>IT Hydrogeology lightxpEN</th>
+    <th>IT Hydrogeology vistaEN</th>
+    <th>IT Hydrogeology lightEN</th>
   </tr>
   <tr>
     <td width="25%">
-      <img src="../previews/it-hydrogeology-lightpython_en.png" 
+      <img src="../../previews/it-hydrogeology-lightpython_en.png" 
         alt="IT Hydrogeology CV example preview" />
     </td>
     <td width="25%">
-      <img src="../previews/it-hydrogeology-lightxp_en.png" 
+      <img src="../../previews/it-hydrogeology-lightxp_en.png" 
         alt="IT Hydrogeology CV example preview" />
     </td>
     <td width="25%">
-      <img src="../previews/it-hydrogeology-vista_en.png" 
+      <img src="../../previews/it-hydrogeology-vista_en.png" 
         alt="IT Hydrogeology CV example preview" />
     </td>
     <td width="25%">
-      <img src="../previews/it-hydrogeology-light_en.png" 
+      <img src="../../previews/it-hydrogeology-light_en.png" 
         alt="IT Hydrogeology CV example preview" />
     </td>
   </tr>
 </table>
 </div>
---->
 
 ## Usage
 

@@ -60,9 +60,10 @@ Please replace them with your own photos and logos if you use this template!
           <img src="previews/it-electronic-darkpython_en.png" 
             alt="IT Electronic CV example preview" />
         </td>
-    		<td width="33%">
-    			<h4>Coming soon...</h4>
-            </td>
+        <td width="33%">
+          <img src="previews/it-hydrogeology-darkxp_en.png" 
+            alt="IT Hydrogeology CV example preview" />
+        </td>
     	</tr>
 </table>
 </div>
