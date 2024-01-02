@@ -24,6 +24,12 @@
 %
 %-----------------------------------------------------------------------------------------------------------------------------------------------
 
+\usepackage{fp}
+\usepackage{tikz}
+\usepackage{fancybox}
+\usetikzlibrary{calc}
+
+
 
 %counters for chart loop
 \newcounter{a}
@@ -46,31 +52,34 @@
 	% param 4:
 	% param 5:
 	% param 6:
-	\newcommand{\slice}[3] {
+    \newcommand{\slice}[3] {
+        \pgfmathparse{\value{b}}
+        \let\resulta\pgfmathresult
+        \pgfmathparse{\resulta + ##1}
+        \let\resultb\pgfmathresult
+        \pgfmathtruncatemacro{\resultbint}{\resultb}
+        \setcounter{b}{\resultbint}
+    
+        %set from angle point
+        \pgfmathparse{\resulta/100*#1}
+        \let\pointa\pgfmathresult
+    
+        %set toanglepoint
+        \pgfmathparse{\resultb/100*#1}
+        \let\pointb\pgfmathresult
+    
+        %set midangle
+        \pgfmathparse{0.5*\pointa+0.5*\pointb}
+        \let\midangle\pgfmathresult
+    
+        % draw the slice
+        \filldraw[fill=##3!100,draw=#3!100, line width=2pt ] (0,0) -- (\pointa:#2) arc (\pointa:\pointb:#2) -- cycle;
 
-		\setcounter{a}{\value{b}}
-		\addtocounter{b}{##1}
-
-		%set from angle point
-		\pgfmathparse{\thea/100*#1}
-	  	\let\pointa\pgfmathresult
-
-		%set toanglepoint
-		\pgfmathparse{\theb/100*#1}
-	  	\let\pointb\pgfmathresult
-
-		%set midangle
-	 	\pgfmathparse{0.5*\pointa+0.5*\pointb}
-	  	\let\midangle\pgfmathresult
-		
-		% draw the slice
-	  	\filldraw[fill=##3!100,draw=#3!100, line width=2pt ] (0,0) -- (\pointa:#2) arc (\pointa:\pointb:#2) -- cycle;
-
-	  	% draw label
-	  	\node[label=\midangle:\fcolorbox{##3}{#5}{\textcolor{#4}{##2}}] at (\midangle:#2) {};
-
-		\filldraw[fill=#3,draw=none] (0,0) circle (#2/2);
-	}
+        % draw label
+        \node[label=\midangle:\fcolorbox{##3}{#5}{\begin{tabular}{@{}c@{}}\textcolor{#4}{##2}\end{tabular}}] at (\midangle:#2) {};
+    
+        \filldraw[fill=#3,draw=none] (0,0) circle (#2/2);
+    }
 
 	% execute commands
 	\setcounter{a}{0}
