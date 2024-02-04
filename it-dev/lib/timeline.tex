@@ -36,8 +36,8 @@
 %
 % param 1: start year
 % param 2: end year
-% param 3: overall height
-% param 4: overall width            {\parbox{\myboxwidth}
+% param 3: overall height  
+% param 4: overall width      {\parbox{\myboxwidth}
 % param 5: level (width)
 \newenvironment{timelinevertical}[6]{
     \newcommand{\cvcategory}[2]{
@@ -68,16 +68,16 @@
                 
                 \filldraw[fill=##6, draw=none] (-##7, \startexp) rectangle (-#5-##7, \endexp);% rectangle, opacity=0.9
                 	
-				\draw[draw=##6, line width=1.5pt, anchor=west] (0, \startexp) -- (-#5-##7, \startexp);% ex-line
+			\draw[draw=##6, line width=1.5pt, anchor=west] (0, \startexp) -- (-#5-##7, \startexp);% ex-line
                 
-				\draw[draw=##6, line width=1.5pt, anchor=west] (0, \startexp) -- (##4, \startexp+##5);% line
+			\draw[draw=##6, line width=1.5pt, anchor=west] (0, \startexp) -- (##4, \startexp+##5);% line
 				
-				\node[fill=##6, right=-0.1em, inner sep=0.5em, label={[label distance=-4]0:\setlength{\fboxrule}{1pt}\fcolorbox{##6}{sectcol}{\parbox{0.75\textwidth}{\textcolor{gray}{##1}\hspace{3pt}\textcolor{textcol}{##3}}}}] at (##4, \startexp+##5) {};% textbox	\textcolor{##6}{|}
+			\node[fill=##6, right=-0.1em, inner sep=0.5em, label={[label distance=-4]0:\setlength{\fboxrule}{1pt}\fcolorbox{##6}{sectcol}{\parbox{0.75\textwidth}{\textcolor{gray}{##1}\hspace{3pt}\textcolor{textcol}{##3}}}}] at (##4, \startexp+##5) {};% textbox	\textcolor{##6}{|}
 				
 				
-				% \node[below, inner sep=1.5em] at (\eventposition,0) {##1};%draw year below
+			% \node[below, inner sep=1.5em] at (\eventposition,0) {##1};%draw year below
 
-				\draw[fill=white, draw=##6, line width=1.5pt]  (0,\startexp) circle (0.1);%year circle
+			\draw[fill=white, draw=##6, line width=1.5pt]  (0,\startexp) circle (0.1);%year circle
 				
             }
             \addtocounter{leftcount}{1}
@@ -90,19 +90,30 @@
 
     \begin{tikzpicture}
     \setcounter{leftcount}{1}
-    %calc fullrange= number of years
+    
+    % calc fullrange= number of years
     \pgfmathparse{(#2-#1)}
     \let\fullrange\pgfmathresult
+    
+    % int of start year 
+    \pgfmathparse{(#1)}
+    \let\startyear\pgfmathresult
+    
     \draw[draw=textcol,line width=4pt] (0,0) -- (0,#3) ;    %the timeline
-    %for each year put a horizontal line in place
+    % for each year put a horizontal line in place
     \setcounter{yearcount}{1}
     \whiledo{\value{yearcount} < \fullrange}{
-        \draw[fill=white,draw=textcol, line width=2pt]  (0,#3/\fullrange*\value{yearcount}) circle (0.2);
+        \pgfmathparse{mod((\startyear+\value{yearcount}), 100)}
+        \pgfmathtruncatemacro{\rest}{\pgfmathresult}
+        \ifnum\rest<10 0\fi\rest
+        
+        \draw[fill=white,draw=textcol, line width=2pt]  (0,#3/\fullrange*\value{yearcount} + 0.35) circle (0.3);
+        \node[label=\textcolor{textcol}{\textbf{\small\rest}}] at (0,#3/\fullrange*\value{yearcount} + 0.01) {};
         \stepcounter{yearcount}
     }
     %start year
     \filldraw[fill=white!100,draw=textcol,line width=3pt] (0,-0.5) circle (0.5);
-    \node[label=\textcolor{textcol}{\textbf{\small#1}}] at (0,-0.85) {}; 
+    \node[label=\textcolor{textcol}{\textbf{\small#1}}] at (0,-0.82) {}; 
     %end year
     \filldraw[fill=white!100,draw=textcol,line width=5pt] (0,#3+0.75) circle (0.75);
     \node[label=\textcolor{textcol}{\textbf{\large#2}}] at (0,#3+0.42) {}; 
@@ -162,20 +173,20 @@
                 \filldraw[fill=##6, draw=none] (\startexp, ##8) rectangle (\endexp, #5+##8);
                 
                 % ex-line
-				\draw[draw=##6, line width=1.5pt, anchor=west] (\startexp, 0) -- (\startexp, ##8);
-                
-                %line
-				\draw[draw=##6, line width=1.5pt, anchor=west] (\eventposition, 0) -- (\eventposition+##5, ##4); 		
-				
-				%textbox
-				\node[fill=##6, right=-0.1em, inner sep=0.5em, label={[label distance=-4]0:\setlength{\fboxrule}{1pt}\fcolorbox{##6}{sectcol}{\textcolor{textcol}{##3}}}] at (\eventposition+##5,##4) {\textcolor{##7}{##1}};
-				
-				%draw year below
-				% \node[below, inner sep=1.5em] at (\eventposition, 0) {##1};
-				% \node[below, inner sep=1em] at (\eventposition, 0) {\monthf\//\pgfmathprintnumber{\shortyear}};
-				
-				%year circle
-				\draw[fill=white, draw=##6, line width=1.5pt]  (\eventposition, 0) circle (0.1);
+                \draw[draw=##6, line width=1.5pt, anchor=west] (\startexp, 0) -- (\startexp, ##8);
+                    
+                    %line
+                \draw[draw=##6, line width=1.5pt, anchor=west] (\eventposition, 0) -- (\eventposition+##5, ##4); 		
+                    
+                %textbox
+                \node[fill=##6, right=-0.1em, inner sep=0.5em, label={[label distance=-4]0:\setlength{\fboxrule}{1pt}\fcolorbox{##6}{sectcol}{\textcolor{textcol}{##3}}}] at (\eventposition+##5,##4) {\textcolor{##7}{##1}};
+                    
+                %draw year below
+                % \node[below, inner sep=1.5em] at (\eventposition, 0) {##1};
+                % \node[below, inner sep=1em] at (\eventposition, 0) {\monthf\//\pgfmathprintnumber{\shortyear}};
+                    
+                %year circle
+                \draw[fill=white, draw=##6, line width=1.5pt]  (\eventposition, 0) circle (0.1);
             }
             \addtocounter{leftcount}{1}
         }
