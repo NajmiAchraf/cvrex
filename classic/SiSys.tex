@@ -72,13 +72,12 @@
     \vspace{-7mm}
 }
 
-\newcommand{\resumeProject}[4]{
+\newcommand{\resumeProject}[2]{
 \vspace{0.5mm}\item
     \begin{tabular*}{0.99\textwidth}[t]{
-    @{}p{\dimexpr0.23\textwidth-\tabcolsep}@{\hspace{\tabcolsep}} 
-    @{}p{\dimexpr0.41\textwidth-\tabcolsep}@{\hspace{\tabcolsep}}
-    l@{\extracolsep{\fill}}r}
-        \textbf{#1} & \footnotesize{#2} & \footnotesize{#3} & \footnotesize{#4}
+    @{}p{\dimexpr0.40\textwidth-\tabcolsep}@{\hspace{\tabcolsep}} 
+    @{\extracolsep{\fill}}r}
+        \textbf{ #1} & \footnotesize{#2}
     \end{tabular*}
     \vspace{-7mm}
 }
@@ -111,7 +110,7 @@
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%
 \newcommand{\name}{ACHRAF NAJMI}
 \newcommand{\descriptionTitle}{Simulation \& Systems Engineer}
-\newcommand{\skillsNote}{Alternance dès Septembre 2026}
+\newcommand{\skillsNote}{Apprenticeship starting September 2026}
 \newcommand{\map}{Lyon, France}
 \newcommand{\phone}{+33 7 53 00 43 62}
 \newcommand{\email}{najmi.achraf@gmail.com}
@@ -148,8 +147,8 @@
 
 \small
 
-%-----------OBJECTIVE-----------
-\section{\textbf{Objective}}
+%-----------PROFESSIONAL SUMMARY-----------
+\section{\textbf{Professional Summary}}
   \resumeSubHeadingListStart
     \textbf{}{Simulation \& Systems Engineer with a background in Physics. I specialize in C/C++, Python, and High-Performance Computing (HPC) for large-scale numerical simulations and performance-critical systems.}
     \newline
@@ -157,8 +156,8 @@
   \resumeSubHeadingListEnd
 \vspace{-5.5mm}
 
-%-----------EXPERTISE-----------------
-\section{\textbf{Expertise}}
+%-----------TECHNICAL SKILLS-----------------
+\section{\textbf{Technical Skills}}
 \vspace{4pt}
 \centering
 \begin{tblr}{
@@ -177,7 +176,7 @@
 \vspace{-4pt}
 
 %-----------EXPERIENCE-----------
-\section{\textbf{Experience}}
+\section{\textbf{Professional Experience}}
   \resumeSubHeadingListStart
   \resumeDiplome
   {\textweb{toubkal.um6p.ma}{Toubkal Supercomputer} - \textweb{cc.um6p.ma}{College Of Computing} - \textweb{um6p.ma/en/um6p-college-computing}{UM6P}}{06/24 - 03/26}
@@ -196,6 +195,83 @@
   \resumeSubHeadingListEnd
 \vspace{-5.5mm}
 
+%-----------TECHNICAL PROJECTS & 42 CURSUS-----------
+\section{\textbf{Technical Projects \& 42 Cursus}}
+\resumeSubHeadingListStart
+    \resumeProject
+    {Quantify}
+    {\faIcon{flask} Simulation | \faPython Python, NumPy}
+   \begin{itemize}[leftmargin=0.05in, label={}]
+    \small{\item{
+      \iconweb{pygray}{Github}{pygray}{github.com/NajmiAchraf/quantify}{github.com/NajmiAchraf/quantify}
+    }}
+    \end{itemize}
+  \vspace{-5mm}
+    \resumeItemListStart
+        \item {Developed high-performance mathematical tools for large-scale numerical simulations and data workflows.}
+        \item {Focused on algorithmic optimization for computational efficiency, matrix operations, and scaling.}
+    \resumeItemListEnd
+    \vspace{-2mm}
+    \resumeProject
+    {ft\_transcendence}
+    {\faIcon{users} Team | \faJs TypeScript, Three.js}
+   \begin{itemize}[leftmargin=0.05in, label={}]
+    \small{\item{
+      \iconweb{pygray}{Github}{pygray}{github.com/NajmiAchraf/ft\_transcendence}{github.com/NajmiAchraf/ft\_transcendence}
+    }}
+    \end{itemize}
+  \vspace{-5mm}
+    \resumeItemListStart
+        \item {Engineered a real-time multiplayer 3D game backend focused on WebSocket concurrency and low-latency state sync.}
+        \item {Implemented secure OAuth2, 2FA, and robust server-side matchmaking architecture.}
+    \resumeItemListEnd
+    \vspace{-2mm}
+    \resumeProject
+    {Webserv}
+    {\faIcon{network-wired} Systems | \faCode C++98, HTTP}
+   \begin{itemize}[leftmargin=0.05in, label={}]
+    \small{\item{
+      \iconweb{pygray}{Github}{pygray}{github.com/NajmiAchraf/Webserv}{github.com/NajmiAchraf/Webserv}
+    }}
+    \end{itemize}
+  \vspace{-5mm}
+    \resumeItemListStart
+        \item {Engineered a compliant HTTP/1.1 web server mimicking NGINX using non-blocking I/O multiplexing.}
+        \item {Managed socket-level communication, epoll/select, and CGI execution for maximum throughput under concurrent loads.}
+    \resumeItemListEnd
+    \vspace{-2mm}
+    \resumeProject
+    {Advanced Curriculum}
+    {\faIcon{star} Specialization | \faIcon{cloud} Systems \& Data}
+   \begin{itemize}[leftmargin=0.05in, label={}]
+    \small{\item{
+      \iconweb{pygray}{Github}{pygray}{github.com/NajmiAchraf/42cursus}{github.com/NajmiAchraf/42cursus}
+    }}
+    \end{itemize}
+  \vspace{-5mm}
+    \resumeItemListStart
+        \item {\textbf{DevOps \& Cloud:} Orchestrated Kubernetes clusters and CI/CD pipelines (\textit{Inception-of-Things}).}
+        \item {\textbf{Data Science \& ML:} Implemented classification and regression models (\textit{DSLR}, \textit{ft\_linear\_regression}).}
+        \item {\textbf{Low-Level Systems:} Explored low-level optimization and custom assembly implementations (\textit{Libasm}).}
+    \resumeItemListEnd
+    \vspace{-2mm}
+    \resumeProject
+    {Common Core}
+    {\faIcon{users} Collaborative | \faIcon{code} C/C++ \& Unix}
+   \begin{itemize}[leftmargin=0.05in, label={}]
+    \small{\item{
+      \iconweb{pygray}{Github}{pygray}{github.com/NajmiAchraf/42cursus}{github.com/NajmiAchraf/42cursus}
+    }}
+    \end{itemize}
+  \vspace{-5mm}
+    \resumeItemListStart
+        \item {\textbf{Graphics \& Math:} Built a raycasting engine (\textit{cub3d} / binome) and fractal renderer (\textit{fract-ol} / single) using C.}
+        \item {\textbf{Low-level Programming:} Deep dive into memory management, Docker containerization, and process administration.}
+    \resumeItemListEnd
+    \vspace{-2mm}
+\resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
 %-----------EDUCATION-----------
 \section{\textbf{Education}}
   \resumeSubHeadingListStart
@@ -203,19 +279,20 @@
   {\textweb{42lyon.fr}{42 Lyon Auvergne-Rhône-Alpes} - \textweb{campusnumerique.auvergnerhonealpes.fr}{Campus Région du numérique}}{2026 - Present}
    \begin{itemize}[leftmargin=0.05in, label={}]
     \small{\item{
-      \textbf{\href{https://www.francecompetences.fr/recherche/rncp/36137/}{RNCP Level 7 Title 36137 Expert in IT Architecture}} \textit{\footnotesize{(Transfer from 1337 Coding School)}}
+      \textbf{Candidate for RNCP Level 7 Title: Expert in IT Architecture} \textit{\footnotesize{(Transfer from 1337 Coding School)}}
     }}
     \end{itemize}
   \vspace{-5mm}
   \resumeItemListStart
-    \item {Specialization in Systems Architecture, Distributed Infrastructure, and Advanced Algorithms.}
+    \item {Specialization in Data Science, Advanced Algorithms, Systems Architecture, and Distributed Infrastructure.}
   \resumeItemListEnd
   \vspace{-2mm}
   \resumeDiplome
   {\textweb{1337.ma/en/}{1337 Coding School} - \textweb{um6p.ma/en/ecole-1337}{University Mohammed VI Polytechnic}}{2021 - 2026}
    \begin{itemize}[leftmargin=0.05in, label={}]
     \small{\item{
-      \textbf{Conception \& Architecture of Information Systems}{} \textit{\footnotesize{42 Network}}\\
+      \textbf{Conception \& Architecture of Information Systems}{}
+      \textit{\footnotesize{42 Network}}\\
     }}
     \end{itemize}
   \vspace{-5mm}
@@ -232,73 +309,10 @@
     \end{itemize}
   \vspace{-5mm}
   \resumeItemListStart
-    \item {Applied physics and mathematical modeling: differential equations, numerical methods, and system dynamics.}
+    \item {Strong mathematical foundation: Differential equations, Statistics, and Linear Algebra.}
   \resumeItemListEnd
   \vspace{-2mm}
   \resumeSubHeadingListEnd
-\vspace{-5.5mm}
-
-%-----------PROJECTS-----------------
-\section{\textbf{Projects}}
-\resumeSubHeadingListStart
-    \resumeProject
-    {\textweb{github.com/NajmiAchraf/quantify}{Quantify}}
-    {\iconweb{pygray}{Github}{pygray}{github.com/NajmiAchraf/quantify}{github.com/NajmiAchraf/quantify}}
-    {\faIcon{flask} Simulation}
-    {\faPython \hspace{1pt} Python \hspace{1pt} \faIcon{chart-bar} \hspace{1pt} NumPy}
-    \resumeItemListStart
-        \item {Developed high-performance mathematical tools for large-scale numerical simulations and data workflows.}
-        \item {Focused on algorithmic optimization for computational efficiency, matrix operations, and scaling.}
-    \resumeItemListEnd
-    \vspace{-2mm}
-    \resumeProject
-    {\textweb{github.com/NajmiAchraf/ft\_transcendence}{ft\_transcendence}}
-    {\iconweb{pygray}{Github}{pygray}{github.com/NajmiAchraf/ft\_transcendence}{github.com/NajmiAchraf/ft\_transcendence}}
-    {\faIcon{users} Team}
-    {\faJs \hspace{1pt} TypeScript \hspace{1pt} \faCube \hspace{1pt} Three.js}
-    \resumeItemListStart
-        \item {Engineered a real-time multiplayer 3D game backend focused on WebSocket concurrency and low-latency state sync.}
-        \item {Implemented secure OAuth2, 2FA, and robust server-side matchmaking architecture.}
-    \resumeItemListEnd
-    \vspace{-2mm}
-    \resumeProject
-    {\textweb{github.com/NajmiAchraf/Webserv}{Webserv}}
-    {\iconweb{pygray}{Github}{pygray}{github.com/NajmiAchraf/Webserv}{github.com/NajmiAchraf/Webserv}}
-    {\faIcon{network-wired} Systems}
-    {\faCode \hspace{1pt} C++98 \hspace{1pt} \faIcon{server} \hspace{1pt} HTTP}
-    \resumeItemListStart
-        \item {Engineered a compliant HTTP/1.1 web server mimicking NGINX using non-blocking I/O multiplexing.}
-        \item {Managed socket-level communication, epoll/select, and CGI execution for maximum throughput under concurrent loads.}
-    \resumeItemListEnd
-    \vspace{-2mm}
-\resumeSubHeadingListEnd
-\vspace{-5.5mm}
-
-%-----------CURSUS-----------------
-\section{\textbf{42 Cursus Highlights}}
-\resumeSubHeadingListStart
-    \resumeProject
-    {\textweb{github.com/NajmiAchraf/42cursus}{Advanced Curriculum}}
-    {\iconweb{pygray}{Github}{pygray}{github.com/NajmiAchraf/42cursus}{github.com/NajmiAchraf/42cursus}}
-    {\faIcon{star} Specialization}
-    {\faIcon{cloud} Systems \& Data}
-    \resumeItemListStart
-        \item {\textbf{DevOps \& Cloud:} Orchestrated Kubernetes clusters and CI/CD pipelines (\textit{Inception-of-Things}).}
-        \item {\textbf{Data Science \& ML:} Implemented classification and regression models (\textit{DSLR}, \textit{ft\_linear\_regression}).}
-        \item {\textbf{Low-Level Systems:} Explored low-level optimization and custom assembly implementations (\textit{Libasm}).}
-    \resumeItemListEnd
-    \vspace{-2mm}
-    \resumeProject
-    {\textweb{github.com/NajmiAchraf/42cursus}{Common Core}}
-    {\iconweb{pygray}{Github}{pygray}{github.com/NajmiAchraf/42cursus}{github.com/NajmiAchraf/42cursus}}
-    {\faIcon{users} Collaborative}
-    {\faIcon{code} C/C++ \& Unix}
-    \resumeItemListStart
-        \item {\textbf{Graphics \& Math:} Built a raycasting engine (\textit{cub3d} / binome) and fractal renderer (\textit{fract-ol} / single) using C.}
-        \item {\textbf{Low-level Programming:} Deep dive into memory management, Docker containerization, and process administration.}
-    \resumeItemListEnd
-    \vspace{-2mm}
-\resumeSubHeadingListEnd
 \vspace{-5.5mm}
 
 %-----------Soft Skills-----------------

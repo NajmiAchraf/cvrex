@@ -83,13 +83,12 @@
     \vspace{-7mm}
 }
 
-\newcommand{\resumeProject}[4]{
+\newcommand{\resumeProject}[2]{
 \vspace{0.5mm}\item
     \begin{tabular*}{0.99\textwidth}[t]{
-    @{}p{\dimexpr0.23\textwidth-\tabcolsep}@{\hspace{\tabcolsep}} 
-    @{}p{\dimexpr0.40\textwidth-\tabcolsep}@{\hspace{\tabcolsep}}
-    l@{\extracolsep{\fill}}r}
-        \textbf{#1} & \footnotesize{#2} & \footnotesize{#3} & \footnotesize{#4}
+    @{}p{\dimexpr0.40\textwidth-\tabcolsep}@{\hspace{\tabcolsep}} 
+    @{\extracolsep{\fill}}r}
+        \textbf{ #1} & \footnotesize{#2}
     \end{tabular*}
     \vspace{-7mm}
 }
@@ -133,7 +132,7 @@
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%
 \newcommand{\name}{ACHRAF NAJMI}
 \newcommand{\descriptionTitle}{SysAdmin \& DevOps Engineer}
-\newcommand{\alternanceNote}{Alternance dès Septembre 2026}
+\newcommand{\alternanceNote}{Apprenticeship starting September 2026}
 \newcommand{\map}{Lyon, France}
 \newcommand{\phone}{+33 7 53 00 43 62}
 \newcommand{\email}{najmi.achraf@gmail.com}
@@ -170,8 +169,8 @@
 
 \small
 
-%-----------OBJECTIVE-----------
-\section{\textbf{Objective}}
+%-----------PROFESSIONAL SUMMARY-----------
+\section{\textbf{Professional Summary}}
   \resumeSubHeadingListStart
     \textbf{}{IT Engineering student specializing in infrastructure, network security, and automated deployments. Strong foundation in Linux server administration, virtualization (VMware/KVM), and modern DevOps tools.}
     \newline
@@ -179,8 +178,8 @@
   \resumeSubHeadingListEnd
 \vspace{-5.5mm}
 
-%-----------EXPERTISE-----------------
-\section{\textbf{Expertise}}
+%-----------TECHNICAL SKILLS-----------------
+\section{\textbf{Technical Skills}}
 \vspace{5pt}
 \centering
 \begin{tblr}{
@@ -199,8 +198,8 @@
 \end{tblr}
 \vspace{-5pt}
 
-%-----------EXPERIENCE-----------
-\section{\textbf{Experience}}
+%-----------PROFESSIONAL EXPERIENCE-----------
+\section{\textbf{Professional Experience}}
   \resumeSubHeadingListStart
   \resumeDiplome
   {\textweb{toubkal.um6p.ma}{Toubkal Supercomputer} - \textweb{cc.um6p.ma}{College Of Computing} - \textweb{um6p.ma/en/um6p-college-computing}{UM6P}}{06/24 - 03/26}
@@ -218,6 +217,98 @@
   \resumeSubHeadingListEnd
 \vspace{-5.5mm}
 
+%-----------TECHNICAL PROJECTS & 42 CURSUS-----------
+\section{\textbf{Technical Projects \& 42 Cursus}}
+\resumeSubHeadingListStart
+    \resumeProject
+    {Advanced Curriculum}
+    {\faIcon{star} Specialization | \faIcon{cloud} Cloud, Data \& Web}
+   \begin{itemize}[leftmargin=0.05in, label={}]
+    \small{\item{
+      \iconweb{pygray}{Github}{pygray}{github.com/NajmiAchraf/42cursus}{github.com/NajmiAchraf/42cursus}
+    }}
+    \end{itemize}
+  \vspace{-5mm}
+    \resumeItemListStart
+        \item {\textbf{DevOps \& Cloud:} Orchestrated Kubernetes clusters and CI/CD pipelines (\textit{Inception-of-Things}).}
+        \item {\textbf{Data Science \& ML:} Implemented classification and regression models (\textit{DSLR}, \textit{ft\_linear\_regression}).}
+        \item {\textbf{Web 3D:} Engineered a real-time multiplayer 3D game using Three.js and NestJS (\textit{ft\_transcendence}).}
+    \resumeItemListEnd
+    \vspace{-2mm}
+    \resumeProject
+    {Common Core}
+    {\faIcon{users} Collaborative | \faIcon{code} C/C++ \& Unix}
+   \begin{itemize}[leftmargin=0.05in, label={}]
+    \small{\item{
+      \iconweb{pygray}{Github}{pygray}{github.com/NajmiAchraf/42cursus}{github.com/NajmiAchraf/42cursus}
+    }}
+    \end{itemize}
+  \vspace{-5mm}
+    \resumeItemListStart
+        \item {\textbf{Systems \& Network:} Developed a custom Shell (\textit{Minishell}) and a compliant HTTP Server (\textit{Webserv}).}
+        \item {\textbf{Graphics \& Math:} Built a raycasting engine (\textit{cub3d}) and fractal renderer (\textit{fract-ol}) using C and MinilibX.}
+        \item {\textbf{Low-level Programming:} Deep dive into memory management, Docker containerization, and Assembly.}
+    \resumeItemListEnd
+    \vspace{-2mm}
+    \resumeProject
+    {Inception-of-Things}
+    {\faUser Solo | \faIcon{cogs} Kubernetes, K3d}
+   \begin{itemize}[leftmargin=0.05in, label={}]
+    \small{\item{
+      \iconweb{pygray}{Github}{pygray}{github.com/NajmiAchraf/Inception-of-Things}{github.com/NajmiAchraf/Inception-of-Things}
+    }}
+    \end{itemize}
+  \vspace{-5mm}
+    \resumeItemListStart
+        \item {Deployed a multi-node Kubernetes cluster utilizing K3d to virtualize infrastructure environments.}
+        \item {Implemented a complete CI/CD workflow utilizing GitOps methodologies and ArgoCD for automated synchronization.}
+    \resumeItemListEnd
+    \vspace{-2mm}
+    \resumeProject
+    {Born2beroot}
+    {\faUser Solo | \faIcon{linux} Debian, Bash}
+   \begin{itemize}[leftmargin=0.05in, label={}]
+    \small{\item{
+      \iconweb{pygray}{Github}{pygray}{github.com/NajmiAchraf/Born2beroot}{github.com/NajmiAchraf/Born2beroot}
+    }}
+    \end{itemize}
+  \vspace{-5mm}
+    \resumeItemListStart
+        \item {Installed and configured a virtual machine (Debian) setting up a secure server environment from scratch.}
+        \item {Configured strict LVM partitions, UFW firewalls, SSH policies, and wrote automated Bash scripts for system monitoring.}
+    \resumeItemListEnd
+    \vspace{-2mm}
+    \resumeProject
+    {Inception}
+    {\faUser Solo | \faIcon{docker} Docker, WordPress}
+   \begin{itemize}[leftmargin=0.05in, label={}]
+    \small{\item{
+      \iconweb{pygray}{Github}{pygray}{github.com/NajmiAchraf/Inception}{github.com/NajmiAchraf/Inception}
+    }}
+    \end{itemize}
+  \vspace{-5mm}
+    \resumeItemListStart
+        \item {Engineered a complete LEMP stack infrastructure using custom Docker containers built on Alpine Linux.}
+        \item {Configured secure networks, NGINX web servers with SSL/TLS, MariaDB, and deployed a WordPress CMS backend.}
+    \resumeItemListEnd
+    \vspace{-2mm}
+    \resumeProject
+    {webserv}
+    {\faIcon{users} Team | \faCode C++, HTTP/1.1}
+   \begin{itemize}[leftmargin=0.05in, label={}]
+    \small{\item{
+      \iconweb{pygray}{Github}{pygray}{github.com/NajmiAchraf/webserv}{github.com/NajmiAchraf/webserv}
+    }}
+    \end{itemize}
+  \vspace{-5mm}
+    \resumeItemListStart
+        \item {Implemented a fully compliant HTTP/1.1 web server from scratch without external libraries.}
+        \item {Handled socket programming, port multiplexing (epoll), routing, and secure request parsing.}
+    \resumeItemListEnd
+    \vspace{-2mm}
+\resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
 %-----------EDUCATION-----------
 \section{\textbf{Education}}
   \resumeSubHeadingListStart
@@ -230,7 +321,7 @@
     \end{itemize}
   \vspace{-5mm}
   \resumeItemListStart
-    \item {Specialization in Systems Architecture, Distributed Infrastructure, and Advanced Algorithms.}
+    \item {Specialization in Data Science, Advanced Algorithms, Systems Architecture, and Distributed Infrastructure.}
   \resumeItemListEnd
   \vspace{-2mm}
   \resumeDiplome
@@ -243,7 +334,7 @@
     \end{itemize}
   \vspace{-5mm}
   \resumeItemListStart
-    \item {Completed the Common Core (C/C++, System Administration, UNIX Security).}
+    \item {Completed the Common Core (C/C++, System Architecture, UNIX).}
   \resumeItemListEnd
   \vspace{-2mm}
   \resumeDiplome
@@ -255,84 +346,10 @@
     \end{itemize}
   \vspace{-5mm}
   \resumeItemListStart
-    \item {Strong mathematical and analytical foundation for technical problem-solving.}
+    \item {Strong mathematical foundation: Differential equations, Statistics, and Linear Algebra.}
   \resumeItemListEnd
   \vspace{-2mm}
   \resumeSubHeadingListEnd
-\vspace{-5.5mm}
-
-%-----------CURSUS-----------------
-\section{\textbf{42 Cursus}}
-\resumeSubHeadingListStart
-    \resumeProject
-    {\textweb{github.com/NajmiAchraf/42cursus}{Advanced Curriculum}}
-    {\iconweb{pygray}{Github}{pygray}{github.com/NajmiAchraf/42cursus}{github.com/NajmiAchraf/42cursus}}
-    {\faIcon{star} Specialization}
-    {\faIcon{cloud} Cloud, Data \& Web}
-    \resumeItemListStart
-        \item {\textbf{DevOps \& Cloud:} Orchestrated Kubernetes clusters and CI/CD pipelines (\textit{Inception-of-Things}).}
-        \item {\textbf{Data Science \& ML:} Implemented classification and regression models (\textit{DSLR}, \textit{ft\_linear\_regression}).}
-        \item {\textbf{Web 3D:} Engineered a real-time multiplayer 3D game using Three.js and NestJS (\textit{ft\_transcendence}).}
-    \resumeItemListEnd
-    \vspace{-2mm}
-    \resumeProject
-    {\textweb{github.com/NajmiAchraf/42cursus}{Common Core}}
-    {\iconweb{pygray}{Github}{pygray}{github.com/NajmiAchraf/42cursus}{github.com/NajmiAchraf/42cursus}}
-    {\faIcon{users} Collaborative}
-    {\faIcon{code} C/C++ \& Unix}
-    \resumeItemListStart
-        \item {\textbf{Systems \& Network:} Developed a custom Shell (\textit{Minishell}) and a compliant HTTP Server (\textit{Webserv}).}
-        \item {\textbf{Graphics \& Math:} Built a raycasting engine (\textit{cub3d}) and fractal renderer (\textit{fract-ol}) using C and MinilibX.}
-        \item {\textbf{Low-level Programming:} Deep dive into memory management, Docker containerization, and Assembly.}
-    \resumeItemListEnd
-    \vspace{-2mm}
-\resumeSubHeadingListEnd
-\vspace{-5.5mm}
-
-%-----------PROJECTS-----------------
-\section{\textbf{Projects}}
-\resumeSubHeadingListStart
-    \resumeProject
-    {\textweb{github.com/NajmiAchraf/Inception-of-Things}{Inception-of-Things}}
-    {\iconweb{pygray}{Github}{pygray}{github.com/NajmiAchraf/Inception-of-Things}{github.com/NajmiAchraf/Inception-of-Things}}
-    {\faUser \hspace{1pt} Single}
-    {\faIcon{cogs} \hspace{1pt} Kubernetes \hspace{1pt} \faIcon{infinity} \hspace{1pt} K3d}
-    \resumeItemListStart
-        \item {Deployed a multi-node Kubernetes cluster utilizing K3d to virtualize infrastructure environments.}
-        \item {Implemented a complete CI/CD workflow utilizing GitOps methodologies and ArgoCD for automated synchronization.}
-    \resumeItemListEnd
-    \vspace{-2mm}
-    \resumeProject
-    {\textweb{github.com/NajmiAchraf/Born2beroot}{Born2beroot}}
-    {\iconweb{pygray}{Github}{pygray}{github.com/NajmiAchraf/Born2beroot}{github.com/NajmiAchraf/Born2beroot}}
-    {\faUser \hspace{1pt} Single}
-    {\faIcon{linux} \hspace{1pt} Debian \hspace{1pt} \faIcon{terminal} \hspace{1pt} Bash}
-    \resumeItemListStart
-        \item {Installed and configured a virtual machine (Debian) setting up a secure server environment from scratch.}
-        \item {Configured strict LVM partitions, UFW firewalls, SSH policies, and wrote automated Bash scripts for system monitoring.}
-    \resumeItemListEnd
-    \vspace{-2mm}
-    \resumeProject
-    {\textweb{github.com/NajmiAchraf/Inception}{Inception}}
-    {\iconweb{pygray}{Github}{pygray}{github.com/NajmiAchraf/Inception}{github.com/NajmiAchraf/Inception}}
-    {\faUser \hspace{1pt} Single}
-    {\faIcon{docker} \hspace{1pt} Docker \hspace{1pt} \faWordpress \hspace{1pt} CMS}
-    \resumeItemListStart
-        \item {Engineered a complete LEMP stack infrastructure using custom Docker containers built on Alpine Linux.}
-        \item {Configured secure networks, NGINX web servers with SSL/TLS, MariaDB, and deployed a WordPress CMS backend.}
-    \resumeItemListEnd
-    \vspace{-2mm}
-    \resumeProject
-    {\textweb{github.com/NajmiAchraf/webserv}{webserv}}
-    {\iconweb{pygray}{Github}{pygray}{github.com/NajmiAchraf/webserv}{github.com/NajmiAchraf/webserv}}
-    {\faIcon{users} Team}
-    {\faCode \hspace{1pt} C++ \hspace{1pt} \faIcon{server} \hspace{1pt} HTTP/1.1}
-    \resumeItemListStart
-        \item {Implemented a fully compliant HTTP/1.1 web server from scratch without external libraries.}
-        \item {Handled socket programming, port multiplexing (epoll), routing, and secure request parsing.}
-    \resumeItemListEnd
-    \vspace{-2mm}
-\resumeSubHeadingListEnd
 \vspace{-5.5mm}
 
 %-----------Soft Skills-----------------

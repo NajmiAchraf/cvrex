@@ -51,11 +51,9 @@
 \raggedright
 \setlength{\tabcolsep}{0in}
 
-
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
-
 
 %------------ CUSTOM COMMANDS -------------
 \newcommand{\bluetext}[1]{\textcolor{blue}{#1}}
@@ -91,13 +89,12 @@
     \vspace{-7mm}
 }
 
-\newcommand{\resumeProject}[4]{
+\newcommand{\resumeProject}[2]{
 \vspace{0.5mm}\item
     \begin{tabular*}{0.99\textwidth}[t]{
-    @{}p{\dimexpr0.23\textwidth-\tabcolsep}@{\hspace{\tabcolsep}} 
-    @{}p{\dimexpr0.40\textwidth-\tabcolsep}@{\hspace{\tabcolsep}}
-    l@{\extracolsep{\fill}}r}
-        \textbf{#1} & \footnotesize{#2} & \footnotesize{#3} & \footnotesize{#4}
+    @{}p{\dimexpr0.40\textwidth-\tabcolsep}@{\hspace{\tabcolsep}} 
+    @{\extracolsep{\fill}}r}
+        \textbf{ #1} & \footnotesize{#2}
     \end{tabular*}
     \vspace{-7mm}
 }
@@ -140,8 +137,8 @@
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%
 \newcommand{\name}{ACHRAF NAJMI}
-\newcommand{\descriptionTitle}{Data Scientist / ML Engineer}
-\newcommand{\alternanceNote}{Alternance dès Septembre 2026}
+\newcommand{\descriptionTitle}{Machine Learning Engineer}
+\newcommand{\alternanceNote}{Apprenticeship starting September 2026}
 \newcommand{\map}{Lyon, France}
 \newcommand{\phone}{+33 7 53 00 43 62}
 \newcommand{\email}{najmi.achraf@gmail.com}
@@ -178,17 +175,17 @@
 
 \small
 
-%-----------OBJECTIVE-----------
-\section{\textbf{Objective}}
+%-----------PROFESSIONAL SUMMARY-----------
+\section{\textbf{Professional Summary}}
   \resumeSubHeadingListStart
-    \textbf{}{Software Engineer with a strong background in Physics, transitioning into Data Science. I combine valid expertise in C/C++, HPC, and System Architecture with a passion for Machine Learning algorithms.}
+    \textbf{}{Software Engineer transitioning into Data Science, leveraging a strong mathematical foundation in Physics and extensive expertise in Python, C/C++, and HPC system architecture.}
     \newline
-    \textbf{}{Currently executing large-scale simulations in distributed environments, I am seeking an Alternance to apply my algorithmic rigor to Data Science challenges.}
+    \textbf{}{Proven track record of executing large-scale simulations in distributed environments and engineering machine learning algorithms from scratch. Seeking an Alternance to apply rigorous analytical problem-solving and algorithmic optimization to high-impact data challenges.}
   \resumeSubHeadingListEnd
 \vspace{-5.5mm}
 
-%-----------EXPERTISE-----------------
-\section{\textbf{Expertise}}
+%-----------TECHNICAL SKILLS-----------------
+\section{\textbf{Technical Skills}}
 \vspace{5pt}
 \centering
 \begin{tblr}{
@@ -197,24 +194,24 @@
   colsep=0.3em,
 }
     \hline
-    \SetCell[c=2]{c} \textbf{Languages} & & \SetCell[c=2]{c} \textbf{Data Science \& ML} & & \SetCell[c=2]{c} \textbf{Quantum/Math} & & \SetCell[c=2]{c} \textbf{HPC \& DevOps} & & \SetCell[c=2]{c} \textbf{Tools \& Libs} \\
+    \SetCell[c=2]{c} \textbf{Languages} & & \SetCell[c=2]{c} \textbf{Data Science \& ML} & & \SetCell[c=2]{c} \textbf{Quantum \& Math} & & \SetCell[c=2]{c} \textbf{HPC \& DevOps} & & \SetCell[c=2]{c} \textbf{Tools \& Libs} \\
     \hline
-    \faCode & C/C++ & \faChartLine & NumPy & \faIcon{atom} & Qiskit / Cirq & \faIcon{docker} & Docker & \faCodeBranch & GitLab / GitHub \\
-    \faPython & Python & \faTable & Pandas & \faIcon{square-root-alt} & SymPy & \faIcon{cogs} & K8s / K3s & \faIcon{linux} & Linux / Unix \\
-    \faJs & TypeScript & \faChartArea & Matplotlib & \faIcon{calculator} & Statistics & \faIcon{infinity} & ArgoCD & \faIcon{terminal} & Bash / Zsh \\
-    \faMicrochip & Assembly & \faBrain & Regression Models & \faIcon{subscript} & Linear Algebra & \faIcon{server} & SLURM / MPI & \faIcon{file-code} & Makefile \\
+    \faPython & Python & \faChartLine & NumPy / Pandas & \faIcon{atom} & Qiskit / Cirq & \faIcon{docker} & Docker & \faCodeBranch & Git / CI/CD \\
+    \faCode & C/C++ & \faBrain & Regression Models & \faIcon{calculator} & Statistics & \faIcon{cogs} & K8s / K3s & \faIcon{linux} & Linux / Unix \\
+    \faJs & TypeScript & \faChartArea & Matplotlib & \faIcon{square-root-alt} & SymPy & \faIcon{infinity} & ArgoCD & \faIcon{terminal} & Bash / Zsh \\
+    \faMicrochip & Assembly & \faDatabase & Data Wrangling & \faIcon{subscript} & Linear Algebra & \faIcon{server} & SLURM / MPI & \faIcon{file-code} & Makefile \\
     \hline
 \end{tblr}
 \vspace{-5pt}
 
-%-----------EXPERIENCE-----------
-\section{\textbf{Experience}}
+%-----------PROFESSIONAL EXPERIENCE-----------
+\section{\textbf{Professional Experience}}
   \resumeSubHeadingListStart
   \resumeDiplome
-  {\textweb{toubkal.um6p.ma}{Toubkal Supercomputer} - \textweb{cc.um6p.ma}{College Of Computing} - \textweb{um6p.ma/en/um6p-college-computing}{UM6P}}{06/24 - 03/26}
+  {Toubkal Supercomputer - College Of Computing - UM6P}{06/24 - 03/26}
    \begin{itemize}[leftmargin=0.05in, label={}]
     \small{\item{
-      \textbf{Quantum Software Engineer} \textit{(Internship to Full-Time Role)} \\
+      \textbf{Quantum Software Engineer} \textit{(Internship transitioning to Full-Time Role)} \\
     }}
     \end{itemize}
   \vspace{-5mm}
@@ -227,11 +224,64 @@
   \resumeSubHeadingListEnd
 \vspace{-5.5mm}
 
+%-----------TECHNICAL PROJECTS-----------
+\section{\textbf{Technical Projects \& 42 Cursus}}
+\resumeSubHeadingListStart
+    
+    \resumeProject
+    {Machine Learning: Linear Regression}
+    {\faUser \ Solo | \faPython \ Python, ML Algorithms}
+   \begin{itemize}[leftmargin=0.05in, label={}]
+    \small{\item{
+      \iconweb{pygray}{Github}{pygray}{github.com/NajmiAchraf/ft\_linear\_regression}{github.com/NajmiAchraf/ft\_linear\_regression}
+    }}
+    \end{itemize}
+  \vspace{-5mm}
+    \resumeItemListStart
+        \item {Implementation of a machine learning model to predict vehicle prices.}
+        \item {Built Gradient Descent algorithm and cost function minimization from scratch.}
+    \resumeItemListEnd
+    \vspace{-2mm}
+    
+    \resumeProject
+    {Data Science: Logistic Regression}
+    {\faIcon{users} \ Team | \faDatabase \ Data Wrangling, Visualization}
+   \begin{itemize}[leftmargin=0.05in, label={}]
+    \small{\item{
+      \iconweb{pygray}{Github}{pygray}{github.com/NajmiAchraf/dslr}{github.com/NajmiAchraf/dslr}
+    }}
+    \end{itemize}
+  \vspace{-5mm}
+    \resumeItemListStart
+        \item {Re-constituted the "Hogwarts Sorting Hat" using Data Science techniques.}
+        \item {Performed Data Visualization (Histogram, Scatter Plot) and Logistic Regression to classify datasets.}
+    \resumeItemListEnd
+    \vspace{-2mm}
+
+    \resumeProject
+    {Advanced Systems \& Cloud Architecture}
+    {\faIcon{cogs} \ Architecture | \faIcon{docker} \ DevOps, Docker, C/C++}
+   \begin{itemize}[leftmargin=0.05in, label={}]
+    \small{\item{
+      \iconweb{pygray}{Github}{pygray}{github.com/NajmiAchraf/42cursus}{github.com/NajmiAchraf/42cursus}
+    }}
+    \end{itemize}
+  \vspace{-5mm}
+    \resumeItemListStart
+        \item {\textbf{DevOps \& Cloud:} Orchestrated Kubernetes clusters and CI/CD pipelines (\textit{Inception-of-Things}).}
+        \item {\textbf{Data Science \& ML:} Implemented classification and regression models (\textit{DSLR}, \textit{ft\_linear\_regression}).}
+        \item {\textbf{Systems \& Network:} Developed a custom Shell and HTTP Server in C/C++; explored memory management, Docker containerization, and Assembly.}
+    \resumeItemListEnd
+    \vspace{-2mm}
+
+\resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
 %-----------EDUCATION-----------
 \section{\textbf{Education}}
   \resumeSubHeadingListStart
   \resumeDiplome
-  {\textweb{42lyon.fr}{42 Lyon Auvergne-Rhône-Alpes} - \textweb{campusnumerique.auvergnerhonealpes.fr}{Campus Région du numérique}}{2026 - Present}
+  {42 Lyon Auvergne-Rhône-Alpes - Campus Région du numérique}{2026 - Present}
    \begin{itemize}[leftmargin=0.05in, label={}]
     \small{\item{
       \textbf{\href{https://www.francecompetences.fr/recherche/rncp/36137/}{RNCP Level 7 Title 36137 Expert in IT Architecture}} \textit{\footnotesize{(Transfer from 1337 Coding School)}}
@@ -242,8 +292,9 @@
     \item {Specialization in Data Science, Advanced Algorithms, Systems Architecture, and Distributed Infrastructure.}
   \resumeItemListEnd
   \vspace{-2mm}
+  
   \resumeDiplome
-  {\textweb{1337.ma/en/}{1337 Coding School} - \textweb{um6p.ma/en/ecole-1337}{University Mohammed VI Polytechnic}}{2021 - 2026}
+  {1337 Coding School - University Mohammed VI Polytechnic}{2021 - 2026}
    \begin{itemize}[leftmargin=0.05in, label={}]
     \small{\item{
       \textbf{Conception \& Architecture of Information Systems}{}
@@ -252,11 +303,12 @@
     \end{itemize}
   \vspace{-5mm}
   \resumeItemListStart
-    \item {Completed the Common Core (C/C++, System Architecture, UNIX).}
+    \item {Completed the Common Core curriculum focusing on C/C++, System Architecture, and advanced UNIX programming.}
   \resumeItemListEnd
   \vspace{-2mm}
+  
   \resumeDiplome
-  {\textweb{fsb.univh2c.ma/}{Faculty of Science Ben M'sik - University Hassan II}}{End: 2019}
+  {Faculty of Science Ben M'sik - University Hassan II}{End: 2019}
    \begin{itemize}[leftmargin=0.05in, label={}]
     \small{\item{
       \textbf{Bachelor's Degree in Physics (Material Science)}{} \\
@@ -264,83 +316,19 @@
     \end{itemize}
   \vspace{-5mm}
   \resumeItemListStart
-    \item {Strong mathematical foundation: Differential equations, Statistics, and Linear Algebra.}
+    \item {Strong mathematical foundation: Differential Equations, Statistics, Probability, and Linear Algebra.}
   \resumeItemListEnd
   \vspace{-2mm}
   \resumeSubHeadingListEnd
 \vspace{-5.5mm}
 
-%-----------CURSUS-----------------
-\section{\textbf{42 Cursus}}
-\resumeSubHeadingListStart
-    \resumeProject
-    {\textweb{github.com/NajmiAchraf/42cursus}{Advanced Curriculum}}
-    {\iconweb{pygray}{Github}{pygray}{github.com/NajmiAchraf/42cursus}{github.com/NajmiAchraf/42cursus}}
-    {\faIcon{star} Specialization}
-    {\faIcon{cloud} Cloud, Data \& Web}
-    \resumeItemListStart
-        \item {\textbf{DevOps \& Cloud:} Orchestrated Kubernetes clusters and CI/CD pipelines (\textit{Inception-of-Things}).}
-        \item {\textbf{Data Science \& ML:} Implemented classification and regression models (\textit{DSLR}, \textit{ft\_linear\_regression}).}
-        \item {\textbf{Web 3D:} Engineered a real-time multiplayer 3D game using Three.js and NestJS (\textit{ft\_transcendence}).}
-    \resumeItemListEnd
-    \vspace{-2mm}
-    \resumeProject
-    {\textweb{github.com/NajmiAchraf/42cursus}{Common Core}}
-    {\iconweb{pygray}{Github}{pygray}{github.com/NajmiAchraf/42cursus}{github.com/NajmiAchraf/42cursus}}
-    {\faIcon{users} Collaborative}
-    {\faIcon{code} C/C++ \& Unix}
-    \resumeItemListStart
-        \item {\textbf{Systems \& Network:} Developed a custom Shell (\textit{Minishell}) and a compliant HTTP Server (\textit{Webserv}).}
-        \item {\textbf{Graphics \& Math:} Built a raycasting engine (\textit{cub3d}) and fractal renderer (\textit{fract-ol}) using C and MinilibX.}
-        \item {\textbf{Low-level Programming:} Deep dive into memory management, Docker containerization, and Assembly.}
-    \resumeItemListEnd
-    \vspace{-2mm}
-\resumeSubHeadingListEnd
-\vspace{-5.5mm}
-
-%-----------PROJECTS-----------------
-\section{\textbf{Projects}}
-\resumeSubHeadingListStart
-    \resumeProject
-    {\textweb{github.com/NajmiAchraf/dslr}{DSLR}}
-    {\iconweb{pygray}{Github}{pygray}{github.com/NajmiAchraf/dslr}{github.com/NajmiAchraf/dslr}}
-    {\faIcon{users} Team}
-    {\faPython \hspace{1pt} Python \hspace{1pt} \faChartBar \hspace{1pt} Viz}
-    \resumeItemListStart
-        \item {Re-constituted the "Hogwarts Sorting Hat" using Data Science techniques.}
-        \item {Performed Data Visualization (Histogram, Scatter Plot) and Logistic Regression to classify datasets.}
-    \resumeItemListEnd
-    \vspace{-2mm}
-    \resumeProject
-    {\textweb{github.com/NajmiAchraf/ft\_linear\_regression}{ft\_linear\_regression}}
-    {\iconweb{pygray}{Github}{pygray}{github.com/NajmiAchraf/ft\_linear\_regression}{github.com/NajmiAchraf/ft\_linear\_regression}}
-    {\faUser \hspace{1pt} Single}
-    {\faPython \hspace{1pt} Python \hspace{1pt} \faChartLine \hspace{1pt} ML}
-    \resumeItemListStart
-        \item {Implementation of a machine learning model to predict car prices.}
-        \item {Built Gradient Descent algorithm and cost function minimization from scratch.}
-    \resumeItemListEnd
-    \vspace{-2mm}
-    \resumeProject
-    {\textweb{github.com/NajmiAchraf/quantify}{Quantify}}
-    {\iconweb{pygray}{Github}{pygray}{github.com/NajmiAchraf/quantify}{github.com/NajmiAchraf/quantify}}
-    {\faIcon{users} Team}
-    {\faPython \hspace{1pt} Python \hspace{1pt} \faIcon{server} \hspace{1pt} HPC}
-    \resumeItemListStart
-        \item {Core project tied to my Quantum Software Engineer role focusing on computational efficiency.}
-        \item {Developed optimized Python tools for large-scale data manipulation, circuit reduction, and surface code layouts.}
-    \resumeItemListEnd
-    \vspace{-2mm}
-\resumeSubHeadingListEnd
-\vspace{-5.5mm}
-
-%-----------Soft Skills-----------------
+%-----------SOFT SKILLS & LANGUAGES-----------
 \section{\textbf{Soft Skills \& Languages}}
 \vspace{5pt}
  \begin{itemize}[leftmargin=0.05in, label={}]
     \small{\item{
-      \textbf{Languages: }{French (Professional), English (Professional), Arabic (Native)} \\
-      \textbf{Soft Skills: }{Analytical Thinking, Research Rigor, Adaptability, Collaborative Problem Solving.} \\
+      \textbf{Languages: }{French (Professional Working Proficiency), English (Professional Working Proficiency), Arabic (Native)} \\
+      \textbf{Soft Skills: }{Analytical Thinking, Research Rigor, Cross-functional Communication, Collaborative Problem Solving, Adaptability.} \\
     }}
  \end{itemize}
 
