@@ -66,14 +66,6 @@
   }
 }
 
-\newcommand{\resumePOR}[3]{
-\vspace{0.5mm}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}} 
-    \end{tabular*}
-    \vspace{-2mm}
-}
-
 \newcommand{\resumeSubheading}[4]{
 \vspace{0.5mm}\item
     \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
@@ -130,25 +122,25 @@
 
 \newcommand{\iconref}[2]{\textcolor{#1}{\csname fa#2\endcsname}}    
 \newcommand{\iconweb}[5]{                         
-    \href{https://www.#5}{\vcenteredhbox{\iconref{#1}{#2}} \textcolor{#3}{#4}}
+    \href{https://#5}{\vcenteredhbox{\iconref{#1}{#2}} \textcolor{#3}{#4}}
 }
 
 \newcommand{\textweb}[2]{                         
-    \href{https://www.#1}{\vcenteredhbox{\textcolor{textcol}{#2}}}
+    \href{https://#1}{\vcenteredhbox{\textcolor{textcol}{#2}}}
 }
 
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%
 \newcommand{\name}{ACHRAF NAJMI}
-\newcommand{\descriptionTitle}{Systems \& Research Engineer}
-\newcommand{\skillsNote}{Low-Level, Systems \& DevOps Infrastructure}
+\newcommand{\descriptionTitle}{SysAdmin \& DevOps Engineer}
+\newcommand{\alternanceNote}{Alternance dès Septembre 2026}
 \newcommand{\map}{Lyon, France}
 \newcommand{\phone}{+33 7 53 00 43 62}
 \newcommand{\email}{najmi.achraf@gmail.com}
 \newcommand{\linkedin}{linkedin.com/in/najmiachraf}
 \newcommand{\linkedinLink}{https://www.linkedin.com/in/najmiachraf}
 \newcommand{\github}{github.com/NajmiAchraf}
-\newcommand{\githubLink}{https://www.github.com/NajmiAchraf}
+\newcommand{\githubLink}{https://github.com/NajmiAchraf}
 
 \usepackage[default]{raleway}
 \renewcommand*\familydefault{\sfdefault}
@@ -164,10 +156,10 @@
         \begin{tabularx}{\linewidth}{l}
            \textbf{\HUGE{\name}}\\
            \textsc{\Large \descriptionTitle} \\
-           \textit{\small \textcolor{pygray}{\skillsNote}}
+           \textit{\small \textcolor{pygray}{\alternanceNote}}
         \end{tabularx}
     }&
-    \parbox[b][45pt][c]{0.47\textwidth}{
+    \parbox[b][45pt][c]{0.56\textwidth}{
         \begin{tabularx}{\linewidth}{l @{\hspace{0.5em}} l}
            \href{mailto:\email}{\raisebox{0.0\height}{\footnotesize \faEnvelope}\ {\email}} & \href{\linkedinLink}{\raisebox{0.0\height}{\footnotesize \faLinkedin}\ {\linkedin}}\\
            {\raisebox{0.0\height}{\footnotesize \faMobile}\ \phone} & \href{\githubLink}{\raisebox{0.0\height}{\footnotesize \faGithub}\ {\github}}\\
@@ -181,9 +173,9 @@
 %-----------OBJECTIVE-----------
 \section{\textbf{Objective}}
   \resumeSubHeadingListStart
-    \textbf{}{Systems Engineer and Researcher with a background in Physics. I specialize in C/C++, High-Performance Computing (HPC), and System Architecture with a focus on low-level optimization and distributed systems.}
+    \textbf{}{IT Engineering student specializing in infrastructure, network security, and automated deployments. Strong foundation in Linux server administration, virtualization (VMware/KVM), and modern DevOps tools.}
     \newline
-    \textbf{}{Experienced in executing large-scale simulations in HPC environments, I apply algorithmic rigor and systems-level engineering to solve complex infrastructure and architectural challenges.}
+    \textbf{}{Seeking an Alternance to deploy, supervise, and secure critical IT systems, bridging traditional SysAdmin rigor with scalable automation pipelines.}
   \resumeSubHeadingListEnd
 \vspace{-5.5mm}
 
@@ -192,17 +184,17 @@
 \vspace{5pt}
 \centering
 \begin{tblr}{
-  colspec = {|cl|cl|cl|cl|cl|cl|},
+  colspec = {|cl|cl|cl|cl|cl|},
   rowsep=0.1em,
   colsep=0.3em,
 }
     \hline
-    \SetCell[c=2]{c} \textbf{Languages} & & \SetCell[c=2]{c} \textbf{Data Science \& ML} & & \SetCell[c=2]{c} \textbf{Quantum/Math} & & \SetCell[c=2]{c} \textbf{HPC \& DevOps} & & \SetCell[c=2]{c} \textbf{Tools \& Libs} & & \SetCell[c=2]{c} \textbf{Web} \\
+    \SetCell[c=2]{c} \textbf{SysAdmin \& Network} & & \SetCell[c=2]{c} \textbf{Web \& Security} & & \SetCell[c=2]{c} \textbf{DevOps \& Virtualization} & & \SetCell[c=2]{c} \textbf{Scripting \& Code} \\
     \hline
-    \faCode & C/C++ & \faChartLine & NumPy & \faIcon{atom} & Qiskit / Cirq & \faIcon{docker} & Docker & \faCodeBranch & GitLab / GitHub & \faReact & React \\
-    \faPython & Python & \faTable & Pandas & \faIcon{square-root-alt} & SymPy & \faIcon{cogs} & K8s / K3s & \faIcon{linux} & Linux / Unix & \faNode & Node.js \\
-    \faJs & TypeScript & \faChartArea & Matplotlib & \faIcon{calculator} & Statistics & \faIcon{infinity} & ArgoCD & \faIcon{terminal} & Bash / Zsh & \faJs & NestJS \\
-    \faMicrochip & Assembly & \faBrain & Regression Models & \faIcon{subscript} & Linear Algebra & \faIcon{server} & SLURM / MPI & \faIcon{file-code} & Makefile & \faIcon{globe} & Next.js \\
+    \faIcon{linux} & Linux (Debian) & \faIcon{server} & Apache / NGINX & \faIcon{cogs} & KVM / VMware & \faIcon{terminal} & Bash / Zsh \\
+    \faIcon{network-wired} & TCP/IP \& Routing & \faShieldAlt & SSL / Firewalls & \faIcon{docker} & Docker / K8s & \faPython & Python \\
+    \faIcon{desktop} & Nagios / Monitoring & \faIcon{key} & SSH / LDAP & \faIcon{infinity} & CI/CD Pipelines (ArgoCD) & \faDatabase & SQL / PostgreSQL \\
+    \faIcon{microchip} & Backup Systems & \faWordpress & CMS Management & \faCodeBranch & Git / GitLab & \faCode & C / C++ \\
     \hline
 \end{tblr}
 \vspace{-5pt}
@@ -219,9 +211,8 @@
     \end{itemize}
   \vspace{-5mm}
   \resumeItemListStart
-    \item {Engineered Python frameworks for QRAM hierarchical design and algorithmic optimization using Quantify.}
-    \item {Executing high-dimensional quantum simulations on HPC, optimizing distributed workloads via SLURM.}
-    \item {Performing rigorous statistical validation of circuit fidelity using full state-vector comparisons.}
+    \item {Executed high-dimensional simulations on HPC environments, mastering resource allocation via SLURM.}
+    \item {Developed optimized Python frameworks for data manipulation, applying rigorous scripting to solve complex tasks.}
   \resumeItemListEnd
   \vspace{-3mm}
   \resumeSubHeadingListEnd
@@ -234,24 +225,25 @@
   {\textweb{42lyon.fr}{42 Lyon Auvergne-Rhône-Alpes} - \textweb{campusnumerique.auvergnerhonealpes.fr}{Campus Région du numérique}}{2026 - Present}
    \begin{itemize}[leftmargin=0.05in, label={}]
     \small{\item{
-      \textbf{\href{https://www.francecompetences.fr/recherche/rncp/36137/}{RNCP Level 7 Title 36137 Expert in IT Architecture}} \textit{\footnotesize{(Transfer from 1337 Coding School)}}
+      \textbf{Candidate for RNCP Level 7 Title: Expert in IT Architecture} \textit{\footnotesize{(Transfer from 1337 Coding School)}}
     }}
     \end{itemize}
   \vspace{-5mm}
   \resumeItemListStart
-    \item {Specialization in Data Science, Advanced Algorithms, Systems Architecture, and Distributed Infrastructure.}
+    \item {Specialization in Systems Architecture, Distributed Infrastructure, and Advanced Algorithms.}
   \resumeItemListEnd
   \vspace{-2mm}
   \resumeDiplome
   {\textweb{1337.ma/en/}{1337 Coding School} - \textweb{um6p.ma/en/ecole-1337}{University Mohammed VI Polytechnic}}{2021 - 2026}
    \begin{itemize}[leftmargin=0.05in, label={}]
     \small{\item{
-      \textbf{Conception \& Architecture of Information Systems}{} \textit{\footnotesize{42 Network}}\\
+      \textbf{Conception \& Architecture of Information Systems}{}
+      \textit{\footnotesize{42 Network}}\\
     }}
     \end{itemize}
   \vspace{-5mm}
   \resumeItemListStart
-    \item {Completed the Common Core (C/C++, System Architecture, UNIX).}
+    \item {Completed the Common Core (C/C++, System Administration, UNIX Security).}
   \resumeItemListEnd
   \vspace{-2mm}
   \resumeDiplome
@@ -263,7 +255,7 @@
     \end{itemize}
   \vspace{-5mm}
   \resumeItemListStart
-    \item {Strong mathematical foundation: Differential equations, Statistics, and Linear Algebra.}
+    \item {Strong mathematical and analytical foundation for technical problem-solving.}
   \resumeItemListEnd
   \vspace{-2mm}
   \resumeSubHeadingListEnd
@@ -301,33 +293,43 @@
 \section{\textbf{Projects}}
 \resumeSubHeadingListStart
     \resumeProject
-    {\textweb{github.com/NajmiAchraf/ft\_transcendence}{ft\_transcendence}}
-    {\iconweb{pygray}{Github}{pygray}{github.com/NajmiAchraf/ft\_transcendence}{github.com/NajmiAchraf/ft\_transcendence}}
-    {\faIcon{users} Team}
-    {\faJs \hspace{1pt} TypeScript \hspace{1pt} \faCube \hspace{1pt} Three.js}
+    {\textweb{github.com/NajmiAchraf/Inception-of-Things}{Inception-of-Things}}
+    {\iconweb{pygray}{Github}{pygray}{github.com/NajmiAchraf/Inception-of-Things}{github.com/NajmiAchraf/Inception-of-Things}}
+    {\faUser \hspace{1pt} Single}
+    {\faIcon{cogs} \hspace{1pt} Kubernetes \hspace{1pt} \faIcon{infinity} \hspace{1pt} K3d}
     \resumeItemListStart
-        \item {Engineered a real-time multiplayer 3D game backend focused on WebSocket concurrency and low-latency state sync.}
-        \item {Implemented secure OAuth2, 2FA, and robust server-side matchmaking architecture.}
+        \item {Deployed a multi-node Kubernetes cluster utilizing K3d to virtualize infrastructure environments.}
+        \item {Implemented a complete CI/CD workflow utilizing GitOps methodologies and ArgoCD for automated synchronization.}
     \resumeItemListEnd
     \vspace{-2mm}
     \resumeProject
-    {\textweb{github.com/NajmiAchraf/Webserv}{Webserv}}
-    {\iconweb{pygray}{Github}{pygray}{github.com/NajmiAchraf/Webserv}{github.com/NajmiAchraf/Webserv}}
-    {\faIcon{users} Team}
-    {\faCode \hspace{1pt} C++98 \hspace{1pt} \faIcon{network-wired} \hspace{1pt} HTTP}
+    {\textweb{github.com/NajmiAchraf/Born2beroot}{Born2beroot}}
+    {\iconweb{pygray}{Github}{pygray}{github.com/NajmiAchraf/Born2beroot}{github.com/NajmiAchraf/Born2beroot}}
+    {\faUser \hspace{1pt} Single}
+    {\faIcon{linux} \hspace{1pt} Debian \hspace{1pt} \faIcon{terminal} \hspace{1pt} Bash}
     \resumeItemListStart
-        \item {Engineered a compliant HTTP/1.1 web server mimicking NGINX using non-blocking I/O multiplexing.}
-        \item {Managed socket-level communication, epoll/select, and CGI execution for dynamic content.}
+        \item {Installed and configured a virtual machine (Debian) setting up a secure server environment from scratch.}
+        \item {Configured strict LVM partitions, UFW firewalls, SSH policies, and wrote automated Bash scripts for system monitoring.}
     \resumeItemListEnd
     \vspace{-2mm}
     \resumeProject
-    {\textweb{github.com/NajmiAchraf/quantify}{Quantify}}
-    {\iconweb{pygray}{Github}{pygray}{github.com/NajmiAchraf/quantify}{github.com/NajmiAchraf/quantify}}
-    {\faIcon{users} Team}
-    {\faPython \hspace{1pt} Python \hspace{1pt} \faIcon{server} \hspace{1pt} HPC}
+    {\textweb{github.com/NajmiAchraf/Inception}{Inception}}
+    {\iconweb{pygray}{Github}{pygray}{github.com/NajmiAchraf/Inception}{github.com/NajmiAchraf/Inception}}
+    {\faUser \hspace{1pt} Single}
+    {\faIcon{docker} \hspace{1pt} Docker \hspace{1pt} \faWordpress \hspace{1pt} CMS}
     \resumeItemListStart
-        \item {Core project tied to my Quantum Software Engineer role focusing on computational efficiency.}
-        \item {Developed optimized Python tools for large-scale data manipulation, circuit reduction, and surface code layouts.}
+        \item {Engineered a complete LEMP stack infrastructure using custom Docker containers built on Alpine Linux.}
+        \item {Configured secure networks, NGINX web servers with SSL/TLS, MariaDB, and deployed a WordPress CMS backend.}
+    \resumeItemListEnd
+    \vspace{-2mm}
+    \resumeProject
+    {\textweb{github.com/NajmiAchraf/webserv}{webserv}}
+    {\iconweb{pygray}{Github}{pygray}{github.com/NajmiAchraf/webserv}{github.com/NajmiAchraf/webserv}}
+    {\faIcon{users} Team}
+    {\faCode \hspace{1pt} C++ \hspace{1pt} \faIcon{server} \hspace{1pt} HTTP/1.1}
+    \resumeItemListStart
+        \item {Implemented a fully compliant HTTP/1.1 web server from scratch without external libraries.}
+        \item {Handled socket programming, port multiplexing (epoll), routing, and secure request parsing.}
     \resumeItemListEnd
     \vspace{-2mm}
 \resumeSubHeadingListEnd
@@ -339,7 +341,7 @@
  \begin{itemize}[leftmargin=0.05in, label={}]
     \small{\item{
       \textbf{Languages: }{French (Professional), English (Professional), Arabic (Native)} \\
-      \textbf{Soft Skills: }{Analytical Thinking, Research Rigor, Systems Thinking, Collaborative Problem Solving.} \\
+      \textbf{Soft Skills: }{Drafting Technical Documentation, Rigor, Team Collaboration, Problem Solving.} \\
     }}
  \end{itemize}
 
