@@ -1,0 +1,422 @@
+%---- Required Packages and Functions ----
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{tabularray}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{0pt} 
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+
+\usepackage[most]{tcolorbox}
+\tcbset{
+	frame code={}
+	center title,
+	left=0pt,
+	right=0pt,
+	top=0pt,
+	bottom=0pt,
+	colback=gray!20,
+	colframe=white,
+	width=\dimexpr\textwidth\relax,
+	enlarge left by=-2mm,
+	boxsep=4pt,
+	arc=0pt,outer arc=0pt,
+}
+
+\urlstyle{same}
+
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+
+
+
+
+
+
+
+%------------ CUSTOM COMMANDS -------------
+\newcommand{\bluetext}[1]{\textcolor{blue}{#1}}
+
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}} 
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} & \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeDiplome}[2]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{ #1} & \footnotesize{#2}
+    \end{tabular*}
+    \vspace{-7mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.99\textwidth}[t]{
+    @{}p{\dimexpr0.2\textwidth-\tabcolsep}@{\hspace{\tabcolsep}}
+    @{}p{\dimexpr0.5\textwidth-\tabcolsep}@{\hspace{\tabcolsep}}
+    l@{\extracolsep{\fill}}r}
+        \textbf{ #1} & \footnotesize{#2} & \footnotesize{#3} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-7mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+% \renewcommand{\labelitemii}{$\circ$}
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-2mm}}
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+
+\definecolor{textcol}{RGB}{0,0,0}
+\definecolor{pygray}{HTML}{646464}
+
+\newcommand{\iconref}[2]{\textcolor{#1}{\csname fa#2\endcsname}}	%icon shortcut
+\newcommand{\iconweb}[5]{ 						%icon with text ref shortcut
+	\href{https://www.#5}{\vcenteredhbox{\iconref{#1}{#2}} \textcolor{#3}{#4}}
+}
+
+\newcommand{\textweb}[2]{ 						%text ref shortcut
+	\href{https://www.#1}{\vcenteredhbox{\textcolor{textcol}{#2}}}
+}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+%%%%%% DEFINE ELEMENTS HERE %%%%%%%
+\newcommand{\name}{ACHRAF NAJMI}
+\newcommand{\descriptionTitle}{Junior Software Engineer}
+% \newcommand{\birthday}{Born :  7/24/1994}
+\newcommand{\map}{Casablanca, Morocco}
+\newcommand{\phone}{+212 6 22 90 22 21}
+\newcommand{\email}{najmi.achraf@gmail.com}
+\newcommand{\linkedin}{linkedin.com/in/najmiachraf}
+\newcommand{\linkedinLink}{https://www.linkedin.com/in/najmiachraf}
+\newcommand{\github}{github.com/NajmiAchraf}
+\newcommand{\githubLink}{https://www.github.com/NajmiAchraf}
+\newcommand{\stackoverflow}{bit.ly/NajmiAchraf}
+\newcommand{\stackoverflowLink}{https://www.stackoverflow.com/users/12854948}
+
+% set font default
+\usepackage[default]{raleway}
+\renewcommand*\familydefault{\sfdefault}
+\usepackage[T1]{fontenc}
+
+% more font size definitions
+\usepackage{moresize}
+
+\begin{document}
+% \fontfamily{cmr}\selectfont
+
+%----------HEADING-----------------
+
+\parbox{\dimexpr\linewidth-0.0cm\relax}{
+    \parbox[b][45pt][c]{0.43\textwidth}{
+        \begin{tabularx}{\linewidth}{l}
+           \textbf{\HUGE{\name}}\\
+           \textsc{\Large \descriptionTitle}
+        \end{tabularx}
+    }&
+    \parbox[b][45pt][c]{0.47\textwidth}{
+        \begin{tabularx}{\linewidth}{l @{\hspace{0.5em}} l}
+           \href{mailto:\email}{\raisebox{0.0\height}{\footnotesize \faEnvelope}\ {\email}} & \href{\linkedinLink}{\raisebox{0.0\height}{\footnotesize \faLinkedin}\ {\linkedin}}\\
+           {\raisebox{0.0\height}{\footnotesize \faMobile}\ \phone} & \href{\githubLink}{\raisebox{0.0\height}{\footnotesize \faGithub}\ {\github}}\\
+           {\raisebox{0.0\height}{\footnotesize \faMapMarker}\ \map} & \href{\stackoverflowLink}{\raisebox{0.0\height}{\footnotesize \faStackOverflow}\ {\stackoverflow}}\\
+        \end{tabularx}
+    }
+}
+
+% \parbox{3.0cm}{%
+% \flushright \includegraphics[width=2cm,clip]{nitp_logo.png}
+% }
+
+
+
+
+% manage space by reducing font size
+\small
+
+%-----------ABOUT-----------
+\section{\textbf{About}}
+  \resumeSubHeadingListStart
+  
+    \textbf{}{Studying at 1337 42network, mastering C/C++, Python, and blending physics expertise with coding skills.}
+    \newline
+    \textbf{}{Proficient in DevStack tools like Docker and git, excelling in navigating complex technical challenges.}
+    \newline
+    \textbf{}{Thriving on problem-solving and algorithmic thinking.}
+
+  \resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+%-----------EXPERIENCE-----------
+\section{\textbf{Experience}}
+  \resumeSubHeadingListStart
+
+
+  \resumeDiplome
+  {\textweb{cc.um6p.ma}{College Of Computing}-\textweb{um6p.ma/en/um6p-college-computing}{University Mohammed VI Polytechnic}}{06/24 - 11/24}
+
+   \begin{itemize}[leftmargin=0.05in, label={}]
+    \small{\item{
+     \textbf{Quantum Software Engineer Intern}{} \\
+    }}
+    \end{itemize}
+  \vspace{-5mm}
+  \resumeItemListStart
+    \item {Translated quantum programming concepts into practical solutions for QRAM optimization and circuit design.}
+    \item {Optimized quantum circuits for scalable simulations and improved performance on HPC systems.}
+    \item {Implemented efficient quantum algorithms and streamlined workflows with Dockerized environments.}
+  \resumeItemListEnd
+  \vspace{-2mm}
+
+
+  \resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+%-----------EDUCATION-----------
+\section{\textbf{Education}}
+  \resumeSubHeadingListStart
+
+
+  \resumeDiplome
+  {\textweb{1337.ma/en/}{School 1337}-\textweb{um6p.ma/en/ecole-1337}{University Mohammed VI Polytechnic}}{start: 2021}
+
+   \begin{itemize}[leftmargin=0.05in, label={}]
+    \small{\item{
+     \textbf{\textweb{drive.google.com/file/d/1U3MrcMJachzGVEN_-FdHQFZgwCDIJ2TM/view?usp=sharing}{Digital Technology Architect}}{} \\
+    }}
+    \end{itemize}
+  \vspace{-5mm}
+
+  \resumeItemListStart
+    \item {Self-paced, project-based learning fostering technical expertise and collaboration.}
+    \item {Focused on ICT skills, including programming, system administration, and emerging technologies.}
+  \resumeItemListEnd
+  \vspace{-2mm}
+
+  \resumeDiplome
+  {\textweb{fsb.univh2c.ma/}{Faculty of Science Ben M'sik - University Hassan II of Casablanca}}{end: 2019}
+
+   \begin{itemize}[leftmargin=0.05in, label={}]
+    \small{\item{
+     \textbf{Bachelor's Degree in Fundamental Studies}{} \\
+    }}
+    \end{itemize}
+  \vspace{-5mm}
+  \resumeItemListStart
+    \item {Major: Physical Material Science}
+    \item {Specialization: Electronics}
+    \item {PFE: Design of a photovoltaic system and implementation of a solar tracker}
+  \resumeItemListEnd
+  \vspace{-2mm}
+
+
+  \resumeSubHeadingListEnd
+\vspace{-5.5mm}
+%
+
+
+%-----------CURSUS-----------------
+\section{\textbf{Cursus}}
+\resumeSubHeadingListStart
+
+    \resumeProject
+    {\textweb{github.com/NajmiAchraf/42cursus}{42Cursus}}
+    {\iconweb{pygray}{Github}{pygray}{github.com/NajmiAchraf/42cursus}{github.com/NajmiAchraf/42cursus}}
+    {\faIcon{users} Mixed}
+    {\faIcon{python} C/C++ \faIcon{js} \faIcon{docker}}
+
+    \resumeItemListStart
+        \item {Developed skills in programming, algorithms, web development, and AI.}
+        \item {Managed systems, networks, and Docker-based virtual environments.}
+        \item {Explored machine learning and quantum programming.}
+        \item {Engaged in collaborative, real-world projects.}
+    \resumeItemListEnd
+    \vspace{-2mm}
+
+
+\resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+%-----------PROJECTS-----------------
+\section{\textbf{Projects}}
+\resumeSubHeadingListStart
+
+    \resumeProject
+    {\textweb{github.com/NajmiAchraf/quantify}{quantify}}
+    {\iconweb{pygray}{Github}{pygray}{github.com/NajmiAchraf/quantify}{github.com/NajmiAchraf/quantify}}
+    {\faIcon{users} Team of Three}
+    {\faPython \hspace{1pt} Python}
+
+    \resumeItemListStart
+        \item {Developed tools for optimizing quantum circuits and QRAM, based on Google Cirq.}
+        \item {Implemented novel strategies for surface code layouts and Toffoli gate decompositions.}
+    \resumeItemListEnd
+    \vspace{-2mm}
+
+    \resumeProject
+    {\textweb{github.com/NajmiAchraf/MathPy}{MathPy}}
+    {\iconweb{pygray}{Github}{pygray}{github.com/NajmiAchraf/MathPy (PRIVATE)}{github.com/NajmiAchraf/MathPy}}
+    {\faUser \hspace{1pt} Single}
+    {\faPython \hspace{1pt} Python}
+
+    \resumeItemListStart
+        \item {Versatile math tool: Modes for calculations, operations, equation solving, and 2D/3D plotting.}
+        \item {Efficiently handles linear/transcendent equations, and differential equation systems.}
+        \item {User-friendly interface with support for functions, symbols, and shortcuts.}
+    \resumeItemListEnd
+    \vspace{-2mm}
+
+    \resumeProject
+    {\textweb{github.com/NajmiAchraf/Hydrogeologie}{Hydrogeologie}}
+    {\iconweb{pygray}{Github}{pygray}{github.com/NajmiAchraf/Hydrogeologie}{github.com/NajmiAchraf/Hydrogeologie} \iconweb{pygray}{Download}{pygray}{Windows App}{github.com/NajmiAchraf/Hydrogeologie/releases/download/v4.2.1.0-FV/Hydrogeologie.v4.2.1.0.FV.exe}}
+    {\faUser \hspace{1pt} Single}
+    {\faPython \hspace{1pt} Python}
+
+    \resumeItemListStart
+        \item {Hydrogeological solution: Diverse functionalities, simple interface, and smooth navigation.}
+        \item {Focus on groundwater: Covers unidirectional and radial flow, pumping tests, and drawdown studies.}
+    \resumeItemListEnd
+    \vspace{-2mm}
+
+
+\resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+% %-----------Expertises-----------------
+% \section{\textbf{Expertises}}
+ 
+% \begin{tblr}{
+%   colspec = {|l|l|l|l|},
+%   % hlines,
+%   vlines,
+%   rowsep=0.1em,
+% }
+%     \hline
+%     \textbf{Programming Languages} & \textbf{DevStack} & \textbf{Tools} & \textbf{Libraries} & \textbf{Graphics} & \textbf{Frameworks} \\
+%     \hline
+%     C/C++ & \faIcon{file-code} Makefile & \faIcon{dollar-sign} bash/zsh & \faIcon{share-alt} \hspace{1pt} built-in & \faNodeJs \hspace{1pt} Three.js & \faNode \hspace{1pt} Next.js \\
+%     % \hline
+%     \faPython \hspace{1pt} Python & \faIcon{file-code} Shell & \faCodeBranch git & \faCompass \hspace{1pt} Socket.IO & \faIcon{feather-alt} \hspace{1pt} Tkinter & \faNode \hspace{1pt} NestJS \\
+%     % \hline
+%     \faJs \hspace{1pt} TypeScript & \faIcon{file-code} Batch & \faNode nodejs & \faIcon{square-root-alt} \hspace{1pt} sympy & \faIcon{feather} \hspace{1pt} MinilibX &  \\
+%     % \hline
+%     \LaTeX & & & \faSortNumericDown \hspace{1pt} numpy & \faChartArea \hspace{1pt} matplotlib & \\
+%     % \hline
+%      & & & \faTable \hspace{1pt} pandas & \faReact \hspace{1pt} React & \\
+%     \hline
+% \end{tblr}
+
+% \vspace{-8pt}
+
+%-----------Expertises-----------------
+\section{\textbf{Expertises}}
+
+\vspace{5pt}
+
+\centering
+\begin{tblr}{
+  colspec = {|cl|cl|cl|cl|cl|cl|},
+  % hlines,
+  % vlines,
+  rowsep=0.1em,
+  colsep=0.3em,
+}
+    \hline
+    & \textbf{Prog.Lang} & & \textbf{DevStack} & & \textbf{Tools} & & \textbf{Libraries} & & \textbf{Graphics} & & \textbf{Frameworks} \\
+    \hline
+    & C/C++ & \faIcon{cog} & Makefile & \faIcon{terminal} & bash/zsh & \faIcon{atom} & cirq/qiskit & \faNodeJs & Three.js & \faNode & Next.js \\
+    % \hline
+    \faPython & Python & \faIcon{dollar-sign} & Shell & \faCodeBranch & git & \faCompass & Socket.IO & \faIcon{feather-alt} & Tkinter & & (Routing) \\
+    % \hline
+    \faJs & TypeScript & \faIcon{file-code} & Batch & \faIcon{docker} & Docker & \faIcon{square-root-alt} &  sympy & \faIcon{feather} &  MinilibX & \faNode & NestJS \\
+    % \hline
+    & \LaTeX & & & \faIcon{server} & Slurm & \faSortNumericDown & numpy & \faChartArea & matplotlib & & (WebSockets) \\
+    % \hline
+    & & & & \faNode & nodejs & \faTable & pandas & \faReact & React & & (Endpoint)\\
+    % \hline
+    & & & & & & \faIcon{server} & mpi4py & & & & \\
+    \hline
+\end{tblr}
+
+\vspace{-5pt}
+
+%-----------Technical skills-----------------
+\section{\textbf{Skills \& Interests}}
+
+\vspace{5pt}
+
+ \begin{itemize}[leftmargin=0.05in, label={}]
+    \small{\item{
+     \textbf{Soft Skills: }{Positivity, Problem-solving, Teamwork, Adaptability, Time management} \\
+     \textbf{Spoken Languages: }{French (Professional working proficiency), English (Professional working proficiency)} \\
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
