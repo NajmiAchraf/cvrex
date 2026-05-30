@@ -121,25 +121,25 @@
 
 \newcommand{\iconref}[2]{\textcolor{#1}{\csname fa#2\endcsname}}    
 \newcommand{\iconweb}[5]{                         
-    \href{https://#5}{\vcenteredhbox{\iconref{#1}{#2}} \textcolor{#3}{#4}}
+    \href{https://www.#5}{\vcenteredhbox{\iconref{#1}{#2}} \textcolor{#3}{#4}}
 }
 
 \newcommand{\textweb}[2]{                         
-    \href{https://#1}{\vcenteredhbox{\textcolor{textcol}{#2}}}
+    \href{https://www.#1}{\vcenteredhbox{\textcolor{textcol}{#2}}}
 }
 
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%
 \newcommand{\name}{ACHRAF NAJMI}
 \newcommand{\descriptionTitle}{SysAdmin \& DevOps Engineer}
-\newcommand{\alternanceNote}{Apprenticeship starting September 2026}
+\newcommand{\skillsNote}{Infrastructure, Security \& DevOps}
 \newcommand{\map}{Lyon, France}
 \newcommand{\phone}{+33 7 53 00 43 62}
 \newcommand{\email}{najmi.achraf@gmail.com}
 \newcommand{\linkedin}{linkedin.com/in/najmiachraf}
 \newcommand{\linkedinLink}{https://www.linkedin.com/in/najmiachraf}
 \newcommand{\github}{github.com/NajmiAchraf}
-\newcommand{\githubLink}{https://github.com/NajmiAchraf}
+\newcommand{\githubLink}{https://www.github.com/NajmiAchraf}
 
 \usepackage[default]{raleway}
 \renewcommand*\familydefault{\sfdefault}
@@ -155,7 +155,7 @@
         \begin{tabularx}{\linewidth}{l}
            \textbf{\HUGE{\name}}\\
            \textsc{\Large \descriptionTitle} \\
-           \textit{\small \textcolor{pygray}{\alternanceNote}}
+           \textit{\small \textcolor{pygray}{\skillsNote}}
         \end{tabularx}
     }&
     \parbox[b][45pt][c]{0.56\textwidth}{
@@ -174,7 +174,7 @@
   \resumeSubHeadingListStart
     \textbf{}{IT Engineering student specializing in infrastructure, network security, and automated deployments. Strong foundation in Linux server administration, virtualization (VMware/KVM), and modern DevOps tools.}
     \newline
-    \textbf{}{Seeking an Alternance to deploy, supervise, and secure critical IT systems, bridging traditional SysAdmin rigor with scalable automation pipelines.}
+    \textbf{}{Experienced in deploying, supervising, and securing critical IT systems. Skilled at bridging traditional system administration rigor with scalable automation pipelines and cloud-native infrastructure.}
   \resumeSubHeadingListEnd
 \vspace{-5.5mm}
 
@@ -190,7 +190,7 @@
     \hline
     \SetCell[c=2]{c} \textbf{SysAdmin \& Network} & & \SetCell[c=2]{c} \textbf{Web \& Security} & & \SetCell[c=2]{c} \textbf{DevOps \& Virtualization} & & \SetCell[c=2]{c} \textbf{Scripting \& Code} \\
     \hline
-    \faIcon{linux} & Linux (Debian) & \faIcon{server} & Apache / NGINX & \faIcon{cogs} & KVM / VMware & \faIcon{terminal} & Bash / Zsh \\
+    \faIcon{linux} & Linux / MacOS & \faIcon{server} & Apache / NGINX & \faIcon{cogs} & KVM / VMware & \faIcon{terminal} & Bash / Zsh \\
     \faIcon{network-wired} & TCP/IP \& Routing & \faShieldAlt & SSL / Firewalls & \faIcon{docker} & Docker / K8s & \faPython & Python \\
     \faIcon{desktop} & Nagios / Monitoring & \faIcon{key} & SSH / LDAP & \faIcon{infinity} & CI/CD Pipelines (ArgoCD) & \faDatabase & SQL / PostgreSQL \\
     \faIcon{microchip} & Backup Systems & \faWordpress & CMS Management & \faCodeBranch & Git / GitLab & \faCode & C / C++ \\
@@ -220,38 +220,9 @@
 %-----------TECHNICAL PROJECTS & 42 CURSUS-----------
 \section{\textbf{Technical Projects \& 42 Cursus}}
 \resumeSubHeadingListStart
+    
     \resumeProject
-    {Advanced Curriculum}
-    {\faIcon{star} Specialization | \faIcon{cloud} Cloud, Data \& Web}
-   \begin{itemize}[leftmargin=0.05in, label={}]
-    \small{\item{
-      \iconweb{pygray}{Github}{pygray}{github.com/NajmiAchraf/42cursus}{github.com/NajmiAchraf/42cursus}
-    }}
-    \end{itemize}
-  \vspace{-5mm}
-    \resumeItemListStart
-        \item {\textbf{DevOps \& Cloud:} Orchestrated Kubernetes clusters and CI/CD pipelines (\textit{Inception-of-Things}).}
-        \item {\textbf{Data Science \& ML:} Implemented classification and regression models (\textit{DSLR}, \textit{ft\_linear\_regression}).}
-        \item {\textbf{Web 3D:} Engineered a real-time multiplayer 3D game using Three.js and NestJS (\textit{ft\_transcendence}).}
-    \resumeItemListEnd
-    \vspace{-2mm}
-    \resumeProject
-    {Common Core}
-    {\faIcon{users} Collaborative | \faIcon{code} C/C++ \& Unix}
-   \begin{itemize}[leftmargin=0.05in, label={}]
-    \small{\item{
-      \iconweb{pygray}{Github}{pygray}{github.com/NajmiAchraf/42cursus}{github.com/NajmiAchraf/42cursus}
-    }}
-    \end{itemize}
-  \vspace{-5mm}
-    \resumeItemListStart
-        \item {\textbf{Systems \& Network:} Developed a custom Shell (\textit{Minishell}) and a compliant HTTP Server (\textit{Webserv}).}
-        \item {\textbf{Graphics \& Math:} Built a raycasting engine (\textit{cub3d}) and fractal renderer (\textit{fract-ol}) using C and MinilibX.}
-        \item {\textbf{Low-level Programming:} Deep dive into memory management, Docker containerization, and Assembly.}
-    \resumeItemListEnd
-    \vspace{-2mm}
-    \resumeProject
-    {Inception-of-Things}
+    {Kubernetes: Inception-of-Things}
     {\faUser Solo | \faIcon{cogs} Kubernetes, K3d}
    \begin{itemize}[leftmargin=0.05in, label={}]
     \small{\item{
@@ -264,8 +235,9 @@
         \item {Implemented a complete CI/CD workflow utilizing GitOps methodologies and ArgoCD for automated synchronization.}
     \resumeItemListEnd
     \vspace{-2mm}
+    
     \resumeProject
-    {Born2beroot}
+    {Linux Administration: Born2beroot}
     {\faUser Solo | \faIcon{linux} Debian, Bash}
    \begin{itemize}[leftmargin=0.05in, label={}]
     \small{\item{
@@ -278,8 +250,9 @@
         \item {Configured strict LVM partitions, UFW firewalls, SSH policies, and wrote automated Bash scripts for system monitoring.}
     \resumeItemListEnd
     \vspace{-2mm}
+    
     \resumeProject
-    {Inception}
+    {Docker Infrastructure: Inception}
     {\faUser Solo | \faIcon{docker} Docker, WordPress}
    \begin{itemize}[leftmargin=0.05in, label={}]
     \small{\item{
@@ -292,18 +265,35 @@
         \item {Configured secure networks, NGINX web servers with SSL/TLS, MariaDB, and deployed a WordPress CMS backend.}
     \resumeItemListEnd
     \vspace{-2mm}
+    
     \resumeProject
-    {webserv}
+    {HTTP Server: Webserv}
     {\faIcon{users} Team | \faCode C++, HTTP/1.1}
    \begin{itemize}[leftmargin=0.05in, label={}]
     \small{\item{
-      \iconweb{pygray}{Github}{pygray}{github.com/NajmiAchraf/webserv}{github.com/NajmiAchraf/webserv}
+      \iconweb{pygray}{Github}{pygray}{github.com/NajmiAchraf/Webserv}{github.com/NajmiAchraf/Webserv}
     }}
     \end{itemize}
   \vspace{-5mm}
     \resumeItemListStart
         \item {Implemented a fully compliant HTTP/1.1 web server from scratch without external libraries.}
         \item {Handled socket programming, port multiplexing (epoll), routing, and secure request parsing.}
+    \resumeItemListEnd
+    \vspace{-2mm}
+    
+    \resumeProject
+    {Advanced Curriculum \& Common Core}
+    {\faIcon{star} Specialization | \faIcon{cloud} Infrastructure \& DevOps}
+   \begin{itemize}[leftmargin=0.05in, label={}]
+    \small{\item{
+      \iconweb{pygray}{Github}{pygray}{github.com/NajmiAchraf/42cursus}{github.com/NajmiAchraf/42cursus}
+    }}
+    \end{itemize}
+  \vspace{-5mm}
+    \resumeItemListStart
+        \item {\textbf{Cloud \& DevOps:} Orchestrated Kubernetes clusters, Docker containerization, and CI/CD pipelines.}
+        \item {\textbf{Systems Administration:} Custom Shell (\textit{Minishell}), HTTP Server (\textit{Webserv}), and network configuration.}
+        \item {\textbf{Graphics \& Math:} Built a raycasting engine (\textit{cub3d}) and fractal renderer (\textit{fract-ol}) using C and MinilibX.}
     \resumeItemListEnd
     \vspace{-2mm}
 \resumeSubHeadingListEnd
@@ -357,8 +347,8 @@
 \vspace{5pt}
  \begin{itemize}[leftmargin=0.05in, label={}]
     \small{\item{
-      \textbf{Languages: }{French (Professional), English (Professional), Arabic (Native)} \\
-      \textbf{Soft Skills: }{Drafting Technical Documentation, Rigor, Team Collaboration, Problem Solving.} \\
+      \textbf{Languages: }{French (Professional Working Proficiency), English (Professional Working Proficiency), Arabic (Native)} \\
+      \textbf{Soft Skills: }{Analytical Thinking, Research Rigor, Cross-functional Communication, Collaborative Problem Solving, Adaptability.}
     }}
  \end{itemize}
 

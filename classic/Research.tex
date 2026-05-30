@@ -166,7 +166,7 @@
            \textit{\small \textcolor{pygray}{\skillsNote}}
         \end{tabularx}
     }&
-    \parbox[b][45pt][c]{0.47\textwidth}{
+    \parbox[b][45pt][c]{0.56\textwidth}{
         \begin{tabularx}{\linewidth}{l @{\hspace{0.5em}} l}
            \href{mailto:\email}{\raisebox{0.0\height}{\footnotesize \faEnvelope}\ {\email}} & \href{\linkedinLink}{\raisebox{0.0\height}{\footnotesize \faLinkedin}\ {\linkedin}}\\
            {\raisebox{0.0\height}{\footnotesize \faMobile}\ \phone} & \href{\githubLink}{\raisebox{0.0\height}{\footnotesize \faGithub}\ {\github}}\\
@@ -199,7 +199,7 @@
     \SetCell[c=2]{c} \textbf{Languages} & & \SetCell[c=2]{c} \textbf{Data Science \& ML} & & \SetCell[c=2]{c} \textbf{Quantum/Math} & & \SetCell[c=2]{c} \textbf{HPC \& DevOps} & & \SetCell[c=2]{c} \textbf{Tools \& Libs} & & \SetCell[c=2]{c} \textbf{Web} \\
     \hline
     \faCode & C/C++ & \faChartLine & NumPy & \faIcon{atom} & Qiskit / Cirq & \faIcon{docker} & Docker & \faCodeBranch & GitLab / GitHub & \faReact & React \\
-    \faPython & Python & \faTable & Pandas & \faIcon{square-root-alt} & SymPy & \faIcon{cogs} & K8s / K3s & \faIcon{linux} & Linux / Unix & \faNode & Node.js \\
+    \faPython & Python & \faTable & Pandas & \faIcon{square-root-alt} & SymPy & \faIcon{cogs} & K8s / K3s & \faIcon{linux} & Linux / MacOS & \faNode & Node.js \\
     \faJs & TypeScript & \faChartArea & Matplotlib & \faIcon{calculator} & Statistics & \faIcon{infinity} & ArgoCD & \faIcon{terminal} & Bash / Zsh & \faJs & NestJS \\
     \faMicrochip & Assembly & \faBrain & Regression Models & \faIcon{subscript} & Linear Algebra & \faIcon{server} & SLURM / MPI & \faIcon{file-code} & Makefile & \faIcon{globe} & Next.js \\
     \hline
@@ -230,37 +230,7 @@
 \section{\textbf{Technical Projects \& 42 Cursus}}
 \resumeSubHeadingListStart
     \resumeProject
-    {Advanced Curriculum}
-    {\faIcon{star} Specialization | \faIcon{cloud} Cloud, Data \& Web}
-   \begin{itemize}[leftmargin=0.05in, label={}]
-    \small{\item{
-      \iconweb{pygray}{Github}{pygray}{github.com/NajmiAchraf/42cursus}{github.com/NajmiAchraf/42cursus}
-    }}
-    \end{itemize}
-  \vspace{-5mm}
-    \resumeItemListStart
-        \item {\textbf{DevOps \& Cloud:} Orchestrated Kubernetes clusters and CI/CD pipelines (\textit{Inception-of-Things}).}
-        \item {\textbf{Data Science \& ML:} Implemented classification and regression models (\textit{DSLR}, \textit{ft\_linear\_regression}).}
-        \item {\textbf{Web 3D:} Engineered a real-time multiplayer 3D game using Three.js and NestJS (\textit{ft\_transcendence}).}
-    \resumeItemListEnd
-    \vspace{-2mm}
-    \resumeProject
-    {Common Core}
-    {\faIcon{users} Collaborative | \faIcon{code} C/C++ \& Unix}
-   \begin{itemize}[leftmargin=0.05in, label={}]
-    \small{\item{
-      \iconweb{pygray}{Github}{pygray}{github.com/NajmiAchraf/42cursus}{github.com/NajmiAchraf/42cursus}
-    }}
-    \end{itemize}
-  \vspace{-5mm}
-    \resumeItemListStart
-        \item {\textbf{Systems \& Network:} Developed a custom Shell (\textit{Minishell}) and a compliant HTTP Server (\textit{Webserv}).}
-        \item {\textbf{Graphics \& Math:} Built a raycasting engine (\textit{cub3d}) and fractal renderer (\textit{fract-ol}) using C and MinilibX.}
-        \item {\textbf{Low-level Programming:} Deep dive into memory management, Docker containerization, and Assembly.}
-    \resumeItemListEnd
-    \vspace{-2mm}
-    \resumeProject
-    {ft\_transcendence}
+    {Full-Stack Web: ft\_transcendence}
     {\faIcon{users} Team | \faJs TypeScript, Three.js}
    \begin{itemize}[leftmargin=0.05in, label={}]
     \small{\item{
@@ -273,9 +243,10 @@
         \item {Implemented secure OAuth2, 2FA, and robust server-side matchmaking architecture.}
     \resumeItemListEnd
     \vspace{-2mm}
+    
     \resumeProject
-    {Webserv}
-    {\faIcon{users} Team | \faCode C++98, HTTP}
+    {HTTP Server: Webserv}
+    {\faIcon{network-wired} Systems | \faCode C++98, HTTP}
    \begin{itemize}[leftmargin=0.05in, label={}]
     \small{\item{
       \iconweb{pygray}{Github}{pygray}{github.com/NajmiAchraf/Webserv}{github.com/NajmiAchraf/Webserv}
@@ -284,11 +255,12 @@
   \vspace{-5mm}
     \resumeItemListStart
         \item {Engineered a compliant HTTP/1.1 web server mimicking NGINX using non-blocking I/O multiplexing.}
-        \item {Managed socket-level communication, epoll/select, and CGI execution for dynamic content.}
+        \item {Managed socket-level communication, epoll/select, and CGI execution for maximum throughput under concurrent loads.}
     \resumeItemListEnd
     \vspace{-2mm}
+    
     \resumeProject
-    {Quantify}
+    {HPC: Quantify}
     {\faIcon{users} Team | \faPython Python, HPC}
    \begin{itemize}[leftmargin=0.05in, label={}]
     \small{\item{
@@ -297,8 +269,24 @@
     \end{itemize}
   \vspace{-5mm}
     \resumeItemListStart
-        \item {Core project tied to my Quantum Software Engineer role focusing on computational efficiency.}
-        \item {Developed optimized Python tools for large-scale data manipulation, circuit reduction, and surface code layouts.}
+        \item {Engineered a Quantum RAM (QRAM) simulator using Cirq to model hierarchical memory structures for quantum algorithms.}
+        \item {Optimized high-dimensional quantum state representations and circuit execution on HPC infrastructure using SLURM.}
+    \resumeItemListEnd
+    \vspace{-2mm}
+    
+    \resumeProject
+    {Advanced Curriculum \& Common Core}
+    {\faIcon{star} Specialization | \faIcon{cloud} Cloud, Data \& Systems}
+   \begin{itemize}[leftmargin=0.05in, label={}]
+    \small{\item{
+      \iconweb{pygray}{Github}{pygray}{github.com/NajmiAchraf/42cursus}{github.com/NajmiAchraf/42cursus}
+    }}
+    \end{itemize}
+  \vspace{-5mm}
+    \resumeItemListStart
+        \item {\textbf{DevOps \& Cloud:} Orchestrated Kubernetes clusters and CI/CD pipelines (\textit{Inception-of-Things}).}
+        \item {\textbf{Systems \& Network:} Developed a custom Shell (\textit{Minishell}) and HTTP Server (\textit{Webserv}).}
+        \item {\textbf{Graphics \& Math:} Built a raycasting engine (\textit{cub3d}) and fractal renderer (\textit{fract-ol}) using C and MinilibX.}
     \resumeItemListEnd
     \vspace{-2mm}
 \resumeSubHeadingListEnd
@@ -328,7 +316,7 @@
     \end{itemize}
   \vspace{-5mm}
   \resumeItemListStart
-    \item {Completed the Common Core (C/C++, System Architecture, UNIX).}
+    \item {Completed the Common Core curriculum focusing on C/C++, System Architecture, and advanced UNIX programming.}
   \resumeItemListEnd
   \vspace{-2mm}
   \resumeDiplome
@@ -340,7 +328,7 @@
     \end{itemize}
   \vspace{-5mm}
   \resumeItemListStart
-    \item {Strong mathematical foundation: Differential equations, Statistics, and Linear Algebra.}
+    \item {Strong mathematical foundation: Differential Equations, Statistics, Probability, and Linear Algebra.}
   \resumeItemListEnd
   \vspace{-2mm}
   \resumeSubHeadingListEnd
@@ -351,8 +339,8 @@
 \vspace{5pt}
  \begin{itemize}[leftmargin=0.05in, label={}]
     \small{\item{
-      \textbf{Languages: }{French (Professional), English (Professional), Arabic (Native)} \\
-      \textbf{Soft Skills: }{Analytical Thinking, Research Rigor, Systems Thinking, Collaborative Problem Solving.} \\
+      \textbf{Languages: }{French (Professional Working Proficiency), English (Professional Working Proficiency), Arabic (Native)} \\
+      \textbf{Soft Skills: }{Analytical Thinking, Research Rigor, Cross-functional Communication, Collaborative Problem Solving, Adaptability.} \\
     }}
  \end{itemize}
 

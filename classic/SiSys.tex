@@ -99,18 +99,18 @@
 
 \newcommand{\iconref}[2]{\textcolor{#1}{\csname fa#2\endcsname}}    
 \newcommand{\iconweb}[5]{                         
-    \href{https://#5}{\vcenteredhbox{\iconref{#1}{#2}} \textcolor{#3}{#4}}
+    \href{https://www.#5}{\vcenteredhbox{\iconref{#1}{#2}} \textcolor{#3}{#4}}
 }
 
 \newcommand{\textweb}[2]{                         
-    \href{https://#1}{\vcenteredhbox{\textcolor{textcol}{#2}}}
+    \href{https://www.#1}{\vcenteredhbox{\textcolor{textcol}{#2}}}
 }
 
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%
 \newcommand{\name}{ACHRAF NAJMI}
 \newcommand{\descriptionTitle}{Simulation \& Systems Engineer}
-\newcommand{\skillsNote}{Apprenticeship starting September 2026}
+\newcommand{\skillsNote}{Simulation, HPC \& Systems Architecture}
 \newcommand{\map}{Lyon, France}
 \newcommand{\phone}{+33 7 53 00 43 62}
 \newcommand{\email}{najmi.achraf@gmail.com}
@@ -136,7 +136,7 @@
            \textit{\small \textcolor{pygray}{\skillsNote}}
         \end{tabularx}
     }&
-    \parbox[b][45pt][c]{0.47\textwidth}{
+    \parbox[b][45pt][c]{0.56\textwidth}{
         \begin{tabularx}{\linewidth}{l @{\hspace{0.5em}} l}
            \href{mailto:\email}{\raisebox{0.0\height}{\footnotesize \faEnvelope}\ {\email}} & \href{\linkedinLink}{\raisebox{0.0\height}{\footnotesize \faLinkedin}\ {\linkedin}}\\
            {\raisebox{0.0\height}{\footnotesize \faMobile}\ \phone} & \href{\githubLink}{\raisebox{0.0\height}{\footnotesize \faGithub}\ {\github}}\\
@@ -169,8 +169,9 @@
     \SetCell[c=2]{c} \textbf{Languages} & & \SetCell[c=2]{c} \textbf{Numerical \& Sim} & & \SetCell[c=2]{c} \textbf{Quantum/Math} & & \SetCell[c=2]{c} \textbf{HPC \& DevOps} & & \SetCell[c=2]{c} \textbf{Tools \& OS} & & \SetCell[c=2]{c} \textbf{Web} \\
     \hline
     \faCode & C/C++ & \faChartLine & NumPy & \faIcon{atom} & Qiskit / Cirq & \faIcon{docker} & Docker & \faCodeBranch & GitLab/GitHub & \faReact & React \\
-    \faPython & Python & \faCalculator & SciPy & \faIcon{square-root-alt} & SymPy & \faIcon{cogs} & K8s / K3s & \faIcon{linux} & Linux / Unix & \faNode & Node.js \\
+    \faPython & Python & \faCalculator & SciPy & \faIcon{square-root-alt} & SymPy & \faIcon{cogs} & K8s / K3s & \faIcon{linux} & Linux / MacOS & \faNode & Node.js \\
     \faJs & TypeScript & \faChartBar & Stat. Analysis & \faIcon{calculator} & Statistics & \faIcon{server} & SLURM / MPI & \faIcon{terminal} & Bash / Zsh & \faJs & NestJS \\
+    \faMicrochip & Assembly & \faIcon{chart-line} & Pandas & \faIcon{subscript} & Linear Algebra & \faIcon{infinity} & ArgoCD & \faIcon{file-code} & Makefile & \faGlobe & WebSocket \\
     \hline
 \end{tblr}
 \vspace{-4pt}
@@ -199,7 +200,7 @@
 \section{\textbf{Technical Projects \& 42 Cursus}}
 \resumeSubHeadingListStart
     \resumeProject
-    {Quantify}
+    {HPC: Quantify}
     {\faIcon{flask} Simulation | \faPython Python, NumPy}
    \begin{itemize}[leftmargin=0.05in, label={}]
     \small{\item{
@@ -208,12 +209,13 @@
     \end{itemize}
   \vspace{-5mm}
     \resumeItemListStart
-        \item {Developed high-performance mathematical tools for large-scale numerical simulations and data workflows.}
-        \item {Focused on algorithmic optimization for computational efficiency, matrix operations, and scaling.}
+        \item {Engineered a Quantum RAM (QRAM) simulator using Cirq to model hierarchical memory structures for quantum algorithms.}
+        \item {Optimized high-dimensional quantum state representations and distributed execution on HPC infrastructure via SLURM/MPI.}
     \resumeItemListEnd
     \vspace{-2mm}
+    
     \resumeProject
-    {ft\_transcendence}
+    {Full-Stack Web: ft\_transcendence}
     {\faIcon{users} Team | \faJs TypeScript, Three.js}
    \begin{itemize}[leftmargin=0.05in, label={}]
     \small{\item{
@@ -226,8 +228,9 @@
         \item {Implemented secure OAuth2, 2FA, and robust server-side matchmaking architecture.}
     \resumeItemListEnd
     \vspace{-2mm}
+    
     \resumeProject
-    {Webserv}
+    {HTTP Server: Webserv}
     {\faIcon{network-wired} Systems | \faCode C++98, HTTP}
    \begin{itemize}[leftmargin=0.05in, label={}]
     \small{\item{
@@ -240,8 +243,9 @@
         \item {Managed socket-level communication, epoll/select, and CGI execution for maximum throughput under concurrent loads.}
     \resumeItemListEnd
     \vspace{-2mm}
+    
     \resumeProject
-    {Advanced Curriculum}
+    {Advanced Curriculum \& Common Core}
     {\faIcon{star} Specialization | \faIcon{cloud} Systems \& Data}
    \begin{itemize}[leftmargin=0.05in, label={}]
     \small{\item{
@@ -251,22 +255,8 @@
   \vspace{-5mm}
     \resumeItemListStart
         \item {\textbf{DevOps \& Cloud:} Orchestrated Kubernetes clusters and CI/CD pipelines (\textit{Inception-of-Things}).}
-        \item {\textbf{Data Science \& ML:} Implemented classification and regression models (\textit{DSLR}, \textit{ft\_linear\_regression}).}
-        \item {\textbf{Low-Level Systems:} Explored low-level optimization and custom assembly implementations (\textit{Libasm}).}
-    \resumeItemListEnd
-    \vspace{-2mm}
-    \resumeProject
-    {Common Core}
-    {\faIcon{users} Collaborative | \faIcon{code} C/C++ \& Unix}
-   \begin{itemize}[leftmargin=0.05in, label={}]
-    \small{\item{
-      \iconweb{pygray}{Github}{pygray}{github.com/NajmiAchraf/42cursus}{github.com/NajmiAchraf/42cursus}
-    }}
-    \end{itemize}
-  \vspace{-5mm}
-    \resumeItemListStart
         \item {\textbf{Graphics \& Math:} Built a raycasting engine (\textit{cub3d} / binome) and fractal renderer (\textit{fract-ol} / single) using C.}
-        \item {\textbf{Low-level Programming:} Deep dive into memory management, Docker containerization, and process administration.}
+        \item {\textbf{Low-level Systems:} Explored low-level optimization and custom assembly implementations (\textit{Libasm}).}
     \resumeItemListEnd
     \vspace{-2mm}
 \resumeSubHeadingListEnd
@@ -279,7 +269,7 @@
   {\textweb{42lyon.fr}{42 Lyon Auvergne-Rhône-Alpes} - \textweb{campusnumerique.auvergnerhonealpes.fr}{Campus Région du numérique}}{2026 - Present}
    \begin{itemize}[leftmargin=0.05in, label={}]
     \small{\item{
-      \textbf{Candidate for RNCP Level 7 Title: Expert in IT Architecture} \textit{\footnotesize{(Transfer from 1337 Coding School)}}
+      \textbf{\href{https://www.francecompetences.fr/recherche/rncp/36137/}{RNCP Level 7 Title 36137 Expert in IT Architecture}} \textit{\footnotesize{(Transfer from 1337 Coding School)}}
     }}
     \end{itemize}
   \vspace{-5mm}
@@ -297,7 +287,7 @@
     \end{itemize}
   \vspace{-5mm}
   \resumeItemListStart
-    \item {Completed the Common Core (C/C++, System Architecture, UNIX).}
+    \item {Completed the Common Core curriculum focusing on C/C++, System Architecture, and advanced UNIX programming.}
   \resumeItemListEnd
   \vspace{-2mm}
   \resumeDiplome
@@ -320,8 +310,8 @@
 \vspace{4pt}
  \begin{itemize}[leftmargin=0.05in, label={}]
     \small{\item{
-      \textbf{Languages: }{French (Professional), English (Professional), Arabic (Native)} \\
-      \textbf{Soft Skills: }{Analytical Thinking, Research Rigor, Systems Thinking, Collaborative Problem Solving.} \\
+      \textbf{Languages: }{French (Professional Working Proficiency), English (Professional Working Proficiency), Arabic (Native)} \\
+      \textbf{Soft Skills: }{Analytical Thinking, Research Rigor, Cross-functional Communication, Collaborative Problem Solving, Adaptability.} \\
     }}
  \end{itemize}
 

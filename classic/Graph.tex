@@ -121,25 +121,25 @@
 
 \newcommand{\iconref}[2]{\textcolor{#1}{\csname fa#2\endcsname}}    
 \newcommand{\iconweb}[5]{                         
-    \href{https://#5}{\vcenteredhbox{\iconref{#1}{#2}} \textcolor{#3}{#4}}
+    \href{https://www.#5}{\vcenteredhbox{\iconref{#1}{#2}} \textcolor{#3}{#4}}
 }
 
 \newcommand{\textweb}[2]{                         
-    \href{https://#1}{\vcenteredhbox{\textcolor{textcol}{#2}}}
+    \href{https://www.#1}{\vcenteredhbox{\textcolor{textcol}{#2}}}
 }
 
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%
 \newcommand{\name}{ACHRAF NAJMI}
 \newcommand{\descriptionTitle}{Graphics \& Game Developer}
-\newcommand{\alternanceNote}{Apprenticeship starting September 2026}
+\newcommand{\skillsNote}{Graphics, 3D Rendering \& Game Engine}
 \newcommand{\map}{Lyon, France}
 \newcommand{\phone}{+33 7 53 00 43 62}
 \newcommand{\email}{najmi.achraf@gmail.com}
 \newcommand{\linkedin}{linkedin.com/in/najmiachraf}
 \newcommand{\linkedinLink}{https://www.linkedin.com/in/najmiachraf}
 \newcommand{\github}{github.com/NajmiAchraf}
-\newcommand{\githubLink}{https://github.com/NajmiAchraf}
+\newcommand{\githubLink}{https://www.github.com/NajmiAchraf}
 
 \usepackage[default]{raleway}
 \renewcommand*\familydefault{\sfdefault}
@@ -155,7 +155,7 @@
         \begin{tabularx}{\linewidth}{l}
            \textbf{\HUGE{\name}}\\
            \textsc{\Large \descriptionTitle} \\
-           \textit{\small \textcolor{pygray}{\alternanceNote}}
+           \textit{\small \textcolor{pygray}{\skillsNote}}
         \end{tabularx}
     }&
     \parbox[b][45pt][c]{0.56\textwidth}{
@@ -174,7 +174,7 @@
   \resumeSubHeadingListStart
     \textbf{}{Software Engineer with a Physics background, transitioning into Graphics and Game Development. I combine C/C++, 3D Math, and memory management with web 3D rendering.}
     \newline
-    \textbf{}{Seeking an Alternance to apply algorithmic rigor to gaming mechanics, rendering engines, and real-time interactive apps.}
+    \textbf{}{Specialized in applying algorithmic rigor to gaming mechanics, rendering engines, and real-time interactive applications. Strong foundation in computational geometry and low-level optimization.}
   \resumeSubHeadingListEnd
 \vspace{-5.5mm}
 
@@ -191,7 +191,7 @@
     \SetCell[c=2]{c} \textbf{Languages} & & \SetCell[c=2]{c} \textbf{Math \& Graphics} & & \SetCell[c=2]{c} \textbf{HPC \& Quantum} & & \SetCell[c=2]{c} \textbf{Tools \& Libs} & & \SetCell[c=2]{c} \textbf{Web} \\
     \hline
     \faCode & C/C++ & \faCube & Three.js & \faIcon{server} & SLURM & \faCodeBranch & GitLab / GitHub & \faReact & React \\
-    \faPython & Python & \faDesktop & MinilibX & \faIcon{network-wired} & MPI (mpi4py) & \faIcon{linux} & Linux / Unix & \faNode & Node.js \\
+    \faPython & Python & \faDesktop & MinilibX & \faIcon{network-wired} & MPI (mpi4py) & \faIcon{linux} & Linux / MacOS & \faNode & Node.js \\
     \faJs & TypeScript & \faDrawPolygon & Raycasting & \faIcon{atom} & Qiskit / Cirq & \faIcon{terminal} & Bash / Zsh & \faJs & NestJS \\
     \faMicrochip & Assembly & \faIcon{square-root-alt} & SymPy & \faIcon{calculator} & Statistics & \faIcon{file-code} & Makefile & \faIcon{globe} & Next.js \\
     \hline
@@ -222,38 +222,7 @@
 \section{\textbf{Technical Projects \& 42 Cursus}}
 \resumeSubHeadingListStart
     \resumeProject
-    {Advanced Curriculum}
-    {\faIcon{star} Specialization | \faIcon{cloud} Cloud, Data \& Web}
-   \begin{itemize}[leftmargin=0.05in, label={}]
-    \small{\item{
-      \iconweb{pygray}{Github}{pygray}{github.com/NajmiAchraf/42cursus}{github.com/NajmiAchraf/42cursus}
-    }}
-    \end{itemize}
-  \vspace{-5mm}
-    \resumeItemListStart
-        \item {\textbf{DevOps \& Cloud:} Orchestrated Kubernetes clusters and CI/CD pipelines (\textit{Inception-of-Things}).}
-        \item {\textbf{Data Science \& ML:} Implemented classification and regression models (\textit{DSLR}, \textit{ft\_linear\_regression}).}
-        \item {\textbf{Web 3D:} Engineered a real-time multiplayer 3D game using Three.js and NestJS (\textit{ft\_transcendence}).}
-    \resumeItemListEnd
-    \vspace{-2mm}
-    \resumeProject
-    {Common Core}
-    {\faIcon{users} Collaborative | \faIcon{code} C/C++ \& Unix}
-   \begin{itemize}[leftmargin=0.05in, label={}]
-    \small{\item{
-      \iconweb{pygray}{Github}{pygray}{github.com/NajmiAchraf/42cursus}{github.com/NajmiAchraf/42cursus}
-    }}
-    \end{itemize}
-  \vspace{-5mm}
-    \resumeItemListStart
-        \item {\textbf{Systems \& Network:} Developed a custom Shell (\textit{Minishell}) and a compliant HTTP Server (\textit{Webserv}).}
-        \item {\textbf{Graphics \& Math:} Built a raycasting engine (\textit{cub3d}) and fractal renderer (\textit{fract-ol}) using C and MinilibX.}
-        \item {\textbf{Low-level Programming:} Deep dive into memory management, Docker containerization, and Assembly.}
-    \resumeItemListEnd
-    \vspace{-2mm}
-    
-    \resumeProject
-    {ft\_transcendence}
+    {Full-Stack Web: ft\_transcendence}
     {\faIcon{users} Team | \faJs TypeScript, Three.js}
    \begin{itemize}[leftmargin=0.05in, label={}]
     \small{\item{
@@ -266,8 +235,9 @@
         \item {Built a secure backend using NestJS, managing WebSocket concurrency and low-latency state synchronization.}
     \resumeItemListEnd
     \vspace{-2mm}
+    
     \resumeProject
-    {cub3d}
+    {3D Graphics: cub3d}
     {\faUserFriends Pair | \faCode C, MinilibX}
    \begin{itemize}[leftmargin=0.05in, label={}]
     \small{\item{
@@ -280,8 +250,9 @@
         \item {Implemented Digital Differential Analysis for wall intersections, texture mapping, and optimized render loops.}
     \resumeItemListEnd
     \vspace{-2mm}
+    
     \resumeProject
-    {fract-ol}
+    {Fractal Graphics: fract-ol}
     {\faUser Solo | \faCode C, MinilibX}
    \begin{itemize}[leftmargin=0.05in, label={}]
     \small{\item{
@@ -294,18 +265,20 @@
         \item {Engineered mathematical algorithms for interactive scaling, smooth panning, and dynamic color mapping.}
     \resumeItemListEnd
     \vspace{-2mm}
+    
     \resumeProject
-    {Quantify}
-    {\faIcon{users} Team | \faPython Python, HPC}
+    {Advanced Curriculum \& Common Core}
+    {\faIcon{star} Specialization | \faIcon{cloud} Cloud, Data \& Web}
    \begin{itemize}[leftmargin=0.05in, label={}]
     \small{\item{
-      \iconweb{pygray}{Github}{pygray}{github.com/NajmiAchraf/quantify}{github.com/NajmiAchraf/quantify}
+      \iconweb{pygray}{Github}{pygray}{github.com/NajmiAchraf/42cursus}{github.com/NajmiAchraf/42cursus}
     }}
     \end{itemize}
   \vspace{-5mm}
     \resumeItemListStart
-        \item {Core project tied to my Quantum Software Engineer role focusing on computational efficiency.}
-        \item {Built optimized Python tools for large-scale data manipulation, circuit reduction, and surface code mapping.}
+        \item {\textbf{DevOps \& Cloud:} Orchestrated Kubernetes clusters and CI/CD pipelines (\textit{Inception-of-Things}).}
+        \item {\textbf{Graphics \& Math:} Built a raycasting engine (\textit{cub3d}) and fractal renderer (\textit{fract-ol}); deep dive into memory management and Docker.}
+        \item {\textbf{Web 3D:} Engineered a real-time multiplayer 3D game using Three.js and NestJS (\textit{ft\_transcendence}).}
     \resumeItemListEnd
     \vspace{-2mm}
 \resumeSubHeadingListEnd
@@ -318,7 +291,7 @@
   {\textweb{42lyon.fr}{42 Lyon Auvergne-Rhône-Alpes} - \textweb{campusnumerique.auvergnerhonealpes.fr}{Campus Région du numérique}}{2026 - Present}
    \begin{itemize}[leftmargin=0.05in, label={}]
     \small{\item{
-      \textbf{Candidate for RNCP Level 7 Title: Expert in IT Architecture} \textit{\footnotesize{(Transfer from 1337 Coding School)}}
+      \textbf{\href{https://www.francecompetences.fr/recherche/rncp/36137/}{RNCP Level 7 Title 36137 Expert in IT Architecture}} \textit{\footnotesize{(Transfer from 1337 Coding School)}}
     }}
     \end{itemize}
   \vspace{-5mm}
@@ -348,7 +321,7 @@
     \end{itemize}
   \vspace{-5mm}
   \resumeItemListStart
-    \item {Strong mathematical foundation: Differential equations, Statistics, and Linear Algebra.}
+    \item {Strong mathematical foundation: Differential Equations, Statistics, Probability, and Linear Algebra.}
   \resumeItemListEnd
   \vspace{-2mm}
   \resumeSubHeadingListEnd
@@ -359,8 +332,8 @@
 \vspace{5pt}
  \begin{itemize}[leftmargin=0.05in, label={}]
     \small{\item{
-      \textbf{Languages: }{French (Professional), English (Professional), Arabic (Native)} \\
-      \textbf{Soft Skills: }{Analytical Thinking, Research Rigor, Systems Thinking, Collaborative Problem Solving.} \\
+      \textbf{Languages: }{French (Professional Working Proficiency), English (Professional Working Proficiency), Arabic (Native)} \\
+      \textbf{Soft Skills: }{Analytical Thinking, Research Rigor, Cross-functional Communication, Collaborative Problem Solving, Adaptability.} \\
     }}
  \end{itemize}
 
